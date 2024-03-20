@@ -1,0 +1,186 @@
+//header------------------------------------------------------------------------------
+
+@mixin fonts($fw, $fz, $fl){
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $fl
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.header{
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        display: flex;
+        align-items: center;
+    }
+}
+.navbar{
+    display: flex;
+    gap: 172px;
+    align-items: center;
+    .navbar__list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 40px;
+        a{
+            text-decoration: none;
+            color:#1E212C;
+            @include fonts(700, 16px, 25.6px)
+        }
+    }
+}
+.contacts{
+    display: flex;
+    gap: 36px;
+    .contacts__item{
+        display: flex;
+        gap: 12px;
+        p{
+            margin: 0;
+            padding: 0;
+            @include fonts(700, 14px, 21px)
+        }
+        a{
+            text-decoration: none;
+            color:#1E212C;
+            @include fonts(400, 18px, 27px)
+        }
+    }
+}
+
+//footer------------------------------------------------------------------------------
+
+.opacity__text{
+    opacity: 60%;
+}
+.wrapper{
+    padding: 80px 0;
+}
+.footer{
+    background-color: #1E212C;
+    color: #FFFFFF;
+}
+.footer__box, .logo__line{
+    display: flex;
+}
+.logo__box{
+    width: 493/1230 * 100%;
+    p{
+        margin: 0;
+        padding-top: 24px;
+        @include fonts(400, 14px, 21px)
+    }
+}
+.social__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+.footer__box{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo__line{
+    gap: 60px;
+}
+.subscription__box{
+    width: 495/1230 * 100%;
+    .subscription__title{
+        margin: 0;
+        @include fonts(700, 24px, 36px)
+    }
+    .email__field{
+        padding-top: 24px;
+        display: flex;
+        input[type = email]{
+            width: 100%;
+            color: #FFFFFF;
+            opacity: 80%;
+            margin: 0;
+            padding: 13px;
+            @include fonts(400, 14px, 21px);
+            background-color: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px 0 0 4px;
+
+        }
+        input[type = button]{
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0 16px;
+            @include fonts(700, 14px, 44px);
+            background-color: #FF5A30;
+            border-radius: 0px 4px 4px 0px;
+            border: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    p{
+        margin: 0;
+        padding-top: 16px;
+        @include fonts(400, 12px, 18px)
+    }
+
+}
+.footer__contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 131px;
+    padding-top: 49px;
+}
+.info__box{
+    .info__title{
+        margin: 0;
+        @include fonts(700, 16px, 24px)
+    }
+    .info__list{
+        list-style: none;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    .copyright__box{
+        display: flex;
+        align-items: center;
+        span{
+            @include fonts(400, 12px, 18px)
+        }
+    }
+    .copyright__up{
+        text-decoration: none;
+        color: #FFFFFF;
+        display: flex;
+        align-items: self-end;
+        gap: 16px;
+        span{
+            @include fonts(400, 14px, 21px)
+        }
+    }
+}
