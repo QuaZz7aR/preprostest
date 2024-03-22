@@ -132,6 +132,9 @@ body{
             border: none;
             &:hover{
                 cursor: pointer;
+                color: #FF5A30;
+                background-color: #FFFFFF;
+                transition: all 0.2s ease-in;
             }
         }
     }
