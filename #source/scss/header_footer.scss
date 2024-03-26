@@ -1,23 +1,5 @@
 //header------------------------------------------------------------------------------
 
-@mixin fonts($fw, $fz, $fl){
-    font-size: $fz;
-    font-weight: $fw;
-    line-height: $fl
-}
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
-    font-family: Ubuntu, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25.6px;
-}
-.container{
-    width: 1230px;
-    margin: 0 auto;
-}
 .header{
     padding: 22px 0;
     display: flex;
