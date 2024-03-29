@@ -1,0 +1,27 @@
+.description {
+    &__section{
+      background-color: #F4F5F6;
+    }
+    &__box{
+      padding: 60px 0 180px 0;
+      width: 600px;
+    }
+    &__path{
+      margin: 0;
+      padding-bottom: 40px;
+      @include fonts(400,14px,21px);
+      span{
+          color: #9A9CA5;
+      }
+    }
+    &__title{
+      margin: 0;
+      padding-bottom: 24px;
+      @include fonts(700,72px,93.6px);
+    }
+    &__text{
+      margin: 0;
+      @include fonts(400,20px,30px);
+      color: #787A80;
+    }
+  }

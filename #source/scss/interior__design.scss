@@ -1,0 +1,263 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "description.scss";
+@import "our__cards";
+@import "projects.scss";
+@import "supported.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.orange__button{
+    color: #FFFFFF;
+    @include fonts(700,16px,50px);
+    background-color: #FF5A30;
+    border: none;
+    padding: 0 112px;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+    &:hover{
+        cursor: pointer;
+        color: #FF5A30;
+        background-color: #FFFFFF;
+        transition: all 0.2s ease-in;
+    }
+}
+.orange__button-small{
+  color: #FF5A30;
+  @include fonts(700,12px,34px);
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 1px solid #FF5A30;
+  &:hover{
+      cursor: pointer;
+      color: #FFFFFF;
+      background-color: #FF5A30;
+      transition: all 0.2s ease-in;
+  }
+}
+.description__section{
+    background-image: url(../../img/interior__design/bg-image.png);
+    background-position: 103% 50%;
+    background-repeat: no-repeat;
+}
+.description {
+    &__box{
+      padding: 60px 0 115px 0;
+    }
+}
+
+.offer {
+  &__box{
+    padding: 120px 0;
+}
+  &__area{
+    display: flex;
+    gap: 105px;
+    padding-bottom: 180px;
+}
+  &__title{
+    margin: 0;
+    padding-bottom: 60px;
+    @include fonts(700,46px,60px);
+}
+  &__adv{
+    .minus{
+        list-style-image: url(../../img/interior__design/Minus.png);
+        margin: 0;
+    }
+    .plus{
+        list-style-image: url(../../img/interior__design/Plus.png);
+        margin: 0;
+    }
+  }
+  &__subtitle{
+    margin: 0;
+    @include fonts(700,28px,42px);
+    padding-bottom: 24px;
+}
+  &__text{
+    margin: 0;
+    color: #787A80;
+    padding-left: 44px;
+    padding-bottom: 24px;
+}
+  &__pipe{
+    display: flex;
+    gap: 30px;
+}
+}
+.pipe {
+  &__item{
+    max-width: 285px;
+    &:hover{
+      .circles{
+        display: block;
+      }
+      .active{
+        color: #FF5A30;
+      }
+    }
+}
+  &__title{
+    margin: 0;
+    @include fonts(700,20px,30px);
+    padding: 16px 0 8px 0;
+}
+  &__text{
+    margin: 0;
+    color: #787A80;
+}
+}
+.item {
+  &__number{
+    display: flex;
+    gap: 24px;
+    position: relative;
+    p{
+      @include fonts(700,46px,60px);
+      color: #D7DADD;
+      margin: 0;
+    }
+    .circles{
+      position: absolute;
+      display: none;
+      top: -46%;
+      left: -11%;
+    }
+  }
+}
+
+.benefits {
+  &__section{
+    background-color: #1E212C;
+}
+}
+.our {
+  &__values{
+    color: #FFFFFF;
+    padding: 80px 0 126px 0;
+}
+  &__box{
+    padding-bottom: 60px;
+    text-align: center;
+}
+  &__button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 152px;
+  }
+}
+.projects{
+  &{
+    padding: 180px 0 100px 0;
+  }
+  & &__cards &__item-1{
+    background-image: url(../../img/interior__design/image2.jpg);
+    background-repeat: no-repeat;
+}
+& &__cards &__item-2{
+    background-image: url(../../img/interior__design/image.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+  & &__cards &__item-3{
+    background-image: url(../../img/interior__design/image1.jpg);
+    background-repeat: no-repeat;
+}
+}
+
+.our {
+  &__pricing{
+    background-color: #F4F5F6;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -12%;
+        left: -5%;
+        z-index: -1;
+        background-image: url(../../img/main/facts_bg-image.png);
+        background-repeat: no-repeat;
+        transform: rotate(3deg);
+    }
+}
+  &__wrapper{
+    z-index: 1;
+    padding: 80px 0 110px 0;
+}
+  &__box{
+    padding-bottom: 60px;
+}
+  &__table{
+    padding-bottom: 120px;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-collapse: collapse;
+    tr:nth-of-type(2n){
+      background: #F4F5F6;
+    }
+    border: 1px solid #E5E8ED;
+    td:nth-child(2), td:nth-child(3), td:nth-child(4){
+      text-align: center;
+      .grey{
+        color: #424551;
+        margin: 0;
+      }
+    }
+}
+}
+.table {
+  &__title-item{
+    h3{
+      margin: 70px 0 24px 24px;
+      @include fonts(700,18px,27px);
+      text-align: left;
+    }
+}
+  &__title{
+    @include fonts(700,24px,36px);
+    margin: 0;
+    padding: 32px 0 2px 0;
+}
+  &__text{
+    color: #787A80;
+    @include fonts(700,18px,27px);
+    margin: 0;
+    padding-bottom: 24px;
+}
+  &__row-text{
+    color: #424551;
+    margin: 0;
+    padding: 16px 0 16px 24px;
+}
+}
+.orange {
+  &__button-small{
+    margin: 32px 0 32px 0;
+}
+}
+.supported {
+  &__box{
+    padding-top: 120px;
+}
+}
