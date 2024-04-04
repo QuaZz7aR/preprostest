@@ -2,6 +2,7 @@
 @import "header_footer.scss";
 @import "communication.scss";
 @import "description.scss";
+@import "projects.scss";
 
 body{
     margin: 0;
@@ -32,9 +33,132 @@ body{
         transition: all 0.2s ease-in;
     }
 }
-.description__section{
-    background-image: url(../../img/about/Group\ 273.png);
+
+.description {
+    img{
+        border-radius: 4px;
+    }
+  &__section{
+    background-color: #fff;
+    background-image: url(/img/cottage/bg-image.png);
     background-position: 100% 50%;
-    background-size: contain;
     background-repeat: no-repeat;
+}
+  &__area{
+    padding: 80px 0 120px 0;
+}
+  &__title{
+    margin: 0;
+    padding-bottom: 24px;
+    @include fonts(700,64px,76.8px);
+    padding-bottom: 60px;
+}
+  &__images{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+  &__goal{
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+}
+}
+.goal {
+  &__box{
+    display: block;
+    width: 600px;
+}
+  &__title{
+    @include fonts(700, 46px, 60px);
+    margin: 0;
+    padding-bottom: 40px;
+}
+  &__text{
+    margin: 0;
+    @include fonts(400, 18px, 27px);
+    color: rgba(66, 69, 81, 1);
+}
+  &__info{
+    display: flex;
+    padding: 40px 60px;
+    gap: 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 2px rgba(30, 33, 44, 0.1);
+}
+  &__list-subtitle{
+    margin: 0;
+    list-style: none;
+    @include fonts(700, 16px, 25.6px);
+    padding-inline-start: 0px;
+    li{
+        padding-bottom: 16px;
+    }
+    li:last-child{
+        padding-bottom: 0;
+    }
+}
+  &__list-subtext{
+    list-style: none;
+    padding-inline-start: 0px;
+    @include fonts(400, 16px, 25.6px);
+    color: rgba(120, 122, 128, 1);
+    margin: 0;
+    li{
+        padding-bottom: 16px;
+    }
+    li:last-child{
+        padding-bottom: 0;
+    }
+}
+}
+
+.decisions {
+  &__section{
+    background-color: rgba(244, 245, 246, 1);
+}
+  &__box{
+    display: flex;
+    gap: 133px;
+    img{
+        position: relative;
+        top: 80px;
+    }
+}
+  &__area{
+    padding-top: 80px;
+}
+  &__title{
+    margin: 0;
+    padding-bottom: 60px;
+    @include fonts(700, 46px, 60px);
+}
+  &__list{
+    margin: 0;
+    padding-inline-start: 28px;
+    list-style-image: url(/img/cottage/check.svg);
+    li{
+        padding-bottom: 16px;
+    }
+    li:last-child{
+        padding-bottom: 20px;
+    }
+}
+}
+
+.projects {
+  &{
+    padding-top: 200px;
+}
+  &__item-1{
+    background-image: url(/img/cottage/1.png) !important;
+}
+  &__item-2{
+    background-image: url(/img/cottage/2.png) !important;
+}
+  &__item-3{
+    background-image: url(/img/cottage/3.png) !important;
+}
 }
