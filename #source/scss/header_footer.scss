@@ -23,8 +23,12 @@
         a{
             text-decoration: none;
             color:#1E212C;
-            @include fonts(700, 16px, 25.6px)
+            @include fonts(700, 16px, 25.6px);
+            &:hover{
+                color: #FF5A30;
+            }
         }
+
     }
 }
 .contacts{

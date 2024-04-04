@@ -1,0 +1,182 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "supported_companies.scss";
+@import "supported_clients.scss";
+@import "description.scss";
+@import "projects.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.orange__button{
+    color: #FFFFFF;
+    @include fonts(700,16px,50px);
+    background-color: #FF5A30;
+    border: none;
+    padding: 0 112px;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+    &:hover{
+        cursor: pointer;
+        color: #FF5A30;
+        background-color: #FFFFFF;
+        transition: all 0.2s ease-in;
+    }
+}
+.orange__button-small{
+  color: #FF5A30;
+  @include fonts(700,12px,34px);
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 1px solid #FF5A30;
+  &:hover{
+      cursor: pointer;
+      color: #FFFFFF;
+      background-color: #FF5A30;
+      transition: all 0.2s ease-in;
+  }
+}
+.description__section{
+    background-image: url(../../img/work/bg-desc.png);
+    background-position: 103% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.description {
+    &__box{
+      padding: 60px 0 115px 0;
+    }
+}
+
+.projects{
+    &{
+      padding: 215px 0 100px 0;
+    }
+    & &__cards{
+        padding-bottom: 60px;
+    }
+        & &__cards &__item-1{
+        background-image: url(../../img/work/image\(7\).png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-2{
+        background-image: url(../../img/work/image\(8\).png);
+        background-repeat: no-repeat;
+    }
+        & &__cards &__item-3{
+        background-image: url(../../img/work/image\(1\).png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-4{
+        background-image: url(../../img/work/image\(2\).png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-5{
+        background-image: url(../../img/work/image\(3\).png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-6{
+        background-image: url(../../img/work/image.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-7{
+        background-image: url(../../img/work/image\(4\).png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-8{
+        background-image: url(../../img/work/image\(5\).png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-9{
+        background-image: url(../../img/work/image\(6\).png);
+        background-repeat: no-repeat;
+    }
+    & &__view{
+        padding: 7px;
+        display: flex;
+        gap: 16px;
+        background-color: #fff;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid #1E212C;
+        }
+    }
+    &__load{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.description {
+    &__cards{
+        position: relative;
+        top: 94px;
+        .active{
+            background-color: #FF5A30;
+            box-shadow: 0 30px 80px -20px #FF5A30;
+            p{
+                color: #FFFFFF;
+                margin: 0;
+                @include fonts(700,16px,25.6px)
+            }
+        }
+        display: flex;
+        gap: 20px;
+    }
+    &__item{
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: #fff;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            color: #9A9CA5;
+            margin: 0;
+            @include fonts(700,16px,25.6px);
+            padding-bottom: 32px;
+        }
+        img{
+            padding: 32px 0 16px 0;
+        }
+        box-shadow: 0 5px 80px -55px #1E212C;
+        &:hover{
+            transform: scale(110%);
+            transition: all 0.2s ease;
+        }
+    }
+}
+.supported{
+    &__box{
+        padding: 20px 0 0 0;
+    }
+}
+.companies{
+    &__box{
+       padding: 180px 0 110px 0; 
+    }
+}
+.item{
+    &__box{
+        a{
+            text-decoration: none;
+        }
+    }
+}

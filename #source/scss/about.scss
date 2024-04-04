@@ -1,0 +1,314 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "supported_companies.scss";
+@import "description.scss";
+@import "our__cards.scss";
+@import "projects.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.orange__button{
+    color: #FFFFFF;
+    @include fonts(700,16px,50px);
+    background-color: #FF5A30;
+    border: none;
+    padding: 0 112px;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+    &:hover{
+        cursor: pointer;
+        color: #FF5A30;
+        background-color: #FFFFFF;
+        transition: all 0.2s ease-in;
+    }
+}
+.orange__button-small{
+  color: #FF5A30;
+  @include fonts(700,12px,34px);
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 1px solid #FF5A30;
+  &:hover{
+      cursor: pointer;
+      color: #FFFFFF;
+      background-color: #FF5A30;
+      transition: all 0.2s ease-in;
+  }
+}
+.description__section{
+    background-image: url(../../img/about/Group\ 273.png);
+    background-position: 100% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.information {
+  &__section{
+    background-image: url(/img/about/bg-image.png);
+    background-position: 100% -880%;
+    background-repeat: no-repeat;
+}
+  &__box{
+    padding: 120px 0 240px 0;
+}
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+  &__item{
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  &__quotation{
+    position: relative;
+    display: flex;
+    > img{
+        position: relative;
+        top: 120px;
+    }
+}
+  &__subtitle{
+    margin: 0;
+    text-align: center;
+    padding: 20px 0 8px 0;
+    @include fonts(700,43px,60px);
+    color: #FF5A30;
+}
+  &__subtext{
+    margin: 0;
+    text-align: center;
+    @include fonts(400,14px,21px);
+}
+}
+.quotation {
+  &__box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 553px;
+    background-color: #fff;
+    padding: 80px 105px 80px 77px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px #1E212C08;
+}
+  &__list{
+    list-style-image: url(/img/about/braces.svg);
+    margin: 0;
+    padding-bottom: 60px;
+    @include fonts(700,20px,30px);
+}
+  &__area{
+    display: flex;
+    justify-content: space-between;
+}
+  &__info{
+    padding-left: 40px;
+}
+  &__name{
+    margin: 0;
+    padding-bottom: 4px;
+    @include fonts(700,16px,25.6px);
+}
+  &__position{
+    margin: 0;
+    @include fonts(400,14px,21px);
+    color: #787A80;
+}
+}
+
+.values{
+  padding-bottom: 180px;
+}
+.history {
+  &__section{
+    background-color: #F4F5F6;
+  }
+  &__box{
+    padding: 80px 0 100px 0;
+  }
+  &__title{
+    @include fonts(700, 46px, 60px);
+    margin: 0;
+    padding-bottom: 60px;
+  }
+  &__area{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__dates{
+    margin: 0;
+    padding-inline-start: 40px;
+    .active{
+      color: #FF5A30;
+    }
+    li{
+      @include fonts(700,28px,42px);
+      color: #9A9CA5;
+      padding-bottom: 20px;
+      width: 209px;
+    }
+    li:last-child{
+      padding: 0;
+    }
+  }
+  &__slides{
+    max-width: 810px;
+    position: relative;
+    top: 18px;
+  }
+  &__text{
+    margin: 0;
+    color: #424551;
+    padding-top: 36px;
+  }
+}
+.our {
+  &__box{
+    text-align: center;
+    padding-bottom: 60px;
+}
+  &__cards{
+     text-align: center;
+}
+}
+.arrow {
+  &__box{
+    padding-bottom: 48px;
+}
+  &__box &__left{
+    background-color: transparent;
+    margin-left: auto;
+  }
+}
+
+.team {
+
+  &__box{
+    padding: 120px 0;
+}
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 30px;
+    padding-bottom: 80px;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__subtitle{
+    margin: 0;
+    padding: 10px 0 4px 0;
+    @include fonts(700, 20px, 30px);
+  }
+  &__subtext{
+    margin: 0;
+    color: #787A80;
+  }
+  &__positions{
+    @include fonts(400, 18px, 27px);
+    color: #1E212C;
+    text-align: center;
+  }
+  &__link{
+    @include fonts(400, 18px, 27px);
+    color: #FF5A30;
+  }
+}
+.supported {
+  &__list{
+    padding-bottom: 180px;
+    flex-wrap: wrap;
+    gap: 40px 102px;
+}
+}
+.item__box-1,
+.item__box-2,
+.item__box-3,
+.item__box-4,
+.item__box-5,
+.item__box-6,
+.item__box-7,
+.item__box-8{
+  height: 340px;
+  width: 285px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-radius: 4px;
+  &:hover{
+    .item__socials{
+      display: flex;
+
+    }
+  }
+}
+
+.item__box-1{
+  background-image: url(/img/about/team/image.jpg);
+}
+.item__box-2{
+  background-image: url(/img/about/team/image.png);
+}
+.item__box-3{
+  background-image: url(/img/about/team/image\(1\).png);
+}
+.item__box-4{
+  background-image: url(/img/about/team/image\(2\).png);
+}
+.item__box-5{
+  background-image: url(/img/about/team/image\(3\).png);
+}
+.item__box-6{
+  background-image: url(/img/about/team/image\(4\).png);
+}
+.item__box-7{
+  background-image: url(/img/about/team/image\(5\).png);
+}
+.item__box-8{
+  background-image: url(/img/about/team/image\(6\).png);
+}
+.item__socials{
+  display: none;
+  background-color: rgba(255, 90, 48, .7);
+  padding: 20px 0;
+  gap: 12px;
+  width: 285px;
+  justify-content: center;
+  border-radius: 0 0 4px 4px;
+  a{
+    display: inherit;
+  }
+}
+
+.worldwide {
+  &__section{
+    background-color: rgba(244, 245, 246, 1);
+}
+}
+.our {
+  &__box{
+    padding: 80px 0 120px 0;
+}
+  &__title{
+    padding-bottom: 60px;
+
+}
+}

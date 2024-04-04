@@ -1,5 +1,25 @@
+.arrow__box{
+    display: flex;
+    .arrow__left, .arrow__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .active{
+        background-color: #FF5A30;
+    }
+}
 .projects{
     padding: 120px 0;
+    &__text{
+        @include fonts(700,16px,25.6px);
+        margin: 0;
+    }
     .projects__box{
         display: flex;
         justify-content: space-between;
@@ -9,25 +29,10 @@
             margin: 0;
             @include fonts(700,46px,60px);
         }
-        .arrow__box{
-            display: flex;
-            .arrow__left, .arrow__right{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 48px;
-                height: 48px;
-                border-radius: 50%;
-                background-color: #fff;
-                cursor: pointer;
-            }
-            .active{
-                background-color: #FF5A30;
-            }
-        }
     }
     .projects__cards{
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         padding-bottom: 80px;
         .projects__item-1{
@@ -42,7 +47,15 @@
             background-image: url(../../img/main/image3.png);
             background-repeat: no-repeat;
         }
-        .projects__item-1, .projects__item-2, .projects__item-3{
+        .projects__item-1,
+        .projects__item-2, 
+        .projects__item-3,
+        .projects__item-4,
+        .projects__item-5,
+        .projects__item-6,
+        .projects__item-7,
+        .projects__item-8,
+        .projects__item-9{
             display: flex;
             flex-direction: column;
             justify-content: end;

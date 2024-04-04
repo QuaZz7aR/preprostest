@@ -4,7 +4,7 @@
 @import "description.scss";
 @import "our__cards";
 @import "projects.scss";
-@import "supported.scss";
+@import "supported_companies.scss";
 
 body{
     margin: 0;
@@ -172,7 +172,7 @@ body{
     background-repeat: no-repeat;
 }
 & &__cards &__item-2{
-    background-image: url(../../img/interior__design/image.jpg);
+    background-image: url(../../img/work/image\(2\).png);
     background-repeat: no-repeat;
     background-size:contain;
 }

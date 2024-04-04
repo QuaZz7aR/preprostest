@@ -1,9 +1,10 @@
 .description {
     &__section{
       background-color: #F4F5F6;
+      background-size: contain;
     }
     &__box{
-      padding: 60px 0 180px 0;
+      padding: 80px 0 180px 0;
       width: 600px;
     }
     &__path{

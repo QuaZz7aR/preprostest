@@ -44,6 +44,9 @@
   font-weight: 700;
   line-height: 25.6px;
 }
+.navbar .navbar__list a:hover {
+  color: #FF5A30;
+}
 
 .contacts {
   display: -webkit-box;
@@ -367,9 +370,10 @@
 
 .description__section {
   background-color: #F4F5F6;
+  background-size: contain;
 }
 .description__box {
-  padding: 60px 0 180px 0;
+  padding: 80px 0 180px 0;
   width: 600px;
 }
 .description__path {
@@ -452,8 +456,39 @@
   color: #787A80;
 }
 
+.arrow__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.arrow__box .arrow__left, .arrow__box .arrow__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.arrow__box .active {
+  background-color: #FF5A30;
+}
+
 .projects {
   padding: 120px 0;
+}
+.projects__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  margin: 0;
 }
 .projects .projects__box {
   display: -webkit-box;
@@ -473,34 +508,12 @@
   font-weight: 700;
   line-height: 60px;
 }
-.projects .projects__box .arrow__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.projects .projects__box .arrow__box .arrow__left, .projects .projects__box .arrow__box .arrow__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: pointer;
-}
-.projects .projects__box .arrow__box .active {
-  background-color: #FF5A30;
-}
 .projects .projects__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 80px;
 }
@@ -516,7 +529,15 @@
   background-image: url(../../img/main/image3.png);
   background-repeat: no-repeat;
 }
-.projects .projects__cards .projects__item-1, .projects .projects__cards .projects__item-2, .projects .projects__cards .projects__item-3 {
+.projects .projects__cards .projects__item-1,
+.projects .projects__cards .projects__item-2,
+.projects .projects__cards .projects__item-3,
+.projects .projects__cards .projects__item-4,
+.projects .projects__cards .projects__item-5,
+.projects .projects__cards .projects__item-6,
+.projects .projects__cards .projects__item-7,
+.projects .projects__cards .projects__item-8,
+.projects .projects__cards .projects__item-9 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,10 +554,26 @@
   -webkit-box-shadow: 0 2px 3px -2px;
           box-shadow: 0 2px 3px -2px;
 }
-.projects .projects__cards .projects__item-1:hover .item__box .orange__button, .projects .projects__cards .projects__item-2:hover .item__box .orange__button, .projects .projects__cards .projects__item-3:hover .item__box .orange__button {
+.projects .projects__cards .projects__item-1:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-2:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-3:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-4:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-5:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-6:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-7:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-8:hover .item__box .orange__button,
+.projects .projects__cards .projects__item-9:hover .item__box .orange__button {
   display: block;
 }
-.projects .projects__cards .projects__item-1 .item__box, .projects .projects__cards .projects__item-2 .item__box, .projects .projects__cards .projects__item-3 .item__box {
+.projects .projects__cards .projects__item-1 .item__box,
+.projects .projects__cards .projects__item-2 .item__box,
+.projects .projects__cards .projects__item-3 .item__box,
+.projects .projects__cards .projects__item-4 .item__box,
+.projects .projects__cards .projects__item-5 .item__box,
+.projects .projects__cards .projects__item-6 .item__box,
+.projects .projects__cards .projects__item-7 .item__box,
+.projects .projects__cards .projects__item-8 .item__box,
+.projects .projects__cards .projects__item-9 .item__box {
   background-color: #FFFFFF;
   padding: 16px 20px 24px 20px;
   display: -webkit-box;
@@ -550,7 +587,15 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.projects .projects__cards .projects__item-1 .item__box .orange__button, .projects .projects__cards .projects__item-2 .item__box .orange__button, .projects .projects__cards .projects__item-3 .item__box .orange__button {
+.projects .projects__cards .projects__item-1 .item__box .orange__button,
+.projects .projects__cards .projects__item-2 .item__box .orange__button,
+.projects .projects__cards .projects__item-3 .item__box .orange__button,
+.projects .projects__cards .projects__item-4 .item__box .orange__button,
+.projects .projects__cards .projects__item-5 .item__box .orange__button,
+.projects .projects__cards .projects__item-6 .item__box .orange__button,
+.projects .projects__cards .projects__item-7 .item__box .orange__button,
+.projects .projects__cards .projects__item-8 .item__box .orange__button,
+.projects .projects__cards .projects__item-9 .item__box .orange__button {
   display: none;
   font-size: 14px;
   font-weight: 700;
@@ -561,11 +606,27 @@
   margin-top: 24px;
   padding: 0 32px;
 }
-.projects .projects__cards .projects__item-1 .item__box .orange__button:hover, .projects .projects__cards .projects__item-2 .item__box .orange__button:hover, .projects .projects__cards .projects__item-3 .item__box .orange__button:hover {
+.projects .projects__cards .projects__item-1 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-2 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-3 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-4 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-5 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-6 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-7 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-8 .item__box .orange__button:hover,
+.projects .projects__cards .projects__item-9 .item__box .orange__button:hover {
   color: #FFFFFF;
   background-color: #FF5A30;
 }
-.projects .projects__cards .projects__item-1 .item__box .item__title, .projects .projects__cards .projects__item-2 .item__box .item__title, .projects .projects__cards .projects__item-3 .item__box .item__title {
+.projects .projects__cards .projects__item-1 .item__box .item__title,
+.projects .projects__cards .projects__item-2 .item__box .item__title,
+.projects .projects__cards .projects__item-3 .item__box .item__title,
+.projects .projects__cards .projects__item-4 .item__box .item__title,
+.projects .projects__cards .projects__item-5 .item__box .item__title,
+.projects .projects__cards .projects__item-6 .item__box .item__title,
+.projects .projects__cards .projects__item-7 .item__box .item__title,
+.projects .projects__cards .projects__item-8 .item__box .item__title,
+.projects .projects__cards .projects__item-9 .item__box .item__title {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
@@ -574,7 +635,15 @@
   text-align: center;
   padding-bottom: 4px;
 }
-.projects .projects__cards .projects__item-1 .item__box .item__text, .projects .projects__cards .projects__item-2 .item__box .item__text, .projects .projects__cards .projects__item-3 .item__box .item__text {
+.projects .projects__cards .projects__item-1 .item__box .item__text,
+.projects .projects__cards .projects__item-2 .item__box .item__text,
+.projects .projects__cards .projects__item-3 .item__box .item__text,
+.projects .projects__cards .projects__item-4 .item__box .item__text,
+.projects .projects__cards .projects__item-5 .item__box .item__text,
+.projects .projects__cards .projects__item-6 .item__box .item__text,
+.projects .projects__cards .projects__item-7 .item__box .item__text,
+.projects .projects__cards .projects__item-8 .item__box .item__text,
+.projects .projects__cards .projects__item-9 .item__box .item__text {
   margin: 0;
   color: #787A80;
   font-size: 14px;
@@ -818,7 +887,7 @@ body {
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(../../img/interior__design/image.jpg);
+  background-image: url(../../img/work/image\(2\).png);
   background-repeat: no-repeat;
   background-size: contain;
 }
