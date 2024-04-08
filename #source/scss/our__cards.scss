@@ -2,11 +2,13 @@
     margin: 0;
     padding-bottom: 24px;
     @include fonts(700,46px,59.8px);
+    text-align: center;
 }
 .our__text{
     margin: 0;
     color: #787A80;
     @include fonts(400,18px,27px);
+    text-align: center;
 }
 .our {
     &__cards{

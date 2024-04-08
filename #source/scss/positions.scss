@@ -1,0 +1,208 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "description.scss";
+@import "our__cards.scss";
+@import "buttons.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: rgba(244, 245, 246, 1);
+}
+.description {
+  &__section{
+    background-image: url(/img/positions/image.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+  &__area{
+    padding: 80px 0 145px 0;
+    width: 600px;
+}
+}
+
+
+.vacancy {
+  &__positions{
+    padding: 120px 0 180px 0;
+    display: flex;
+    justify-content: space-between;
+}
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+  &__item{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    border: 1px solid rgba(229, 232, 237, 1);
+    border-radius: 4px;
+    padding: 32px 40px;
+    button{
+      margin: 8px 0;
+    }
+    &:hover{
+      box-shadow: 0 0 20px rgba(30, 33, 44, 0.2);
+      transform: scale(1.03);
+      transition: all .1s ease-in;
+    }
+}
+  &__sub{
+    width: 390px;
+}
+  &__title{
+    margin: 0;
+    @include fonts(700, 28px, 42px);
+    padding-bottom: 24px;
+}
+  &__text{
+    margin: 0;
+    @include fonts(400, 18px, 27px);
+    color: rgba(66, 69, 81, 1);
+    padding-bottom: 48px;
+}
+  &__area{
+    display: flex;
+    gap: 30px;
+}
+}
+.item {
+  &__info{
+    display: flex;
+    padding-bottom: 8px;
+    hr{
+      margin: 4.5px 12px;
+      border: 0.5px solid rgba(120, 122, 128, 1);
+    }
+}
+  &__text{
+    margin: 0;
+    color: rgba(120, 122, 128, 1);
+    @include fonts(400, 14px, 21px);
+    padding-left: 8px;
+}
+  &__title{
+    margin: 0;
+    @include fonts(700, 20px, 30px);
+}
+}
+
+.our {
+  &__values{
+    padding-bottom: 180px;
+}
+  &__box{
+    padding-bottom: 60px;
+}
+}
+
+.modal {
+  &__bg{
+    display: none;
+    position: fixed;
+    background-color: rgba(127, 127, 127, .7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+  &__window{
+    position: relative;
+    width: 390px;
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 4px;
+    border: 1px solid rgba(229, 232, 237, 1);
+    .crosshair{
+      cursor: pointer;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+    }
+    .upload__form{
+      display: flex;
+      input[type=file]{
+        display: none;
+      }
+      label{
+        img{
+          cursor: pointer;
+        }
+        padding-top: 24px;
+        @include fonts(400, 14px, 21px);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .modal__form{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .form__box{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        label{
+          @include fonts(400, 14px, 21px);
+        }
+        input, textarea, select{
+          @include fonts(400,14px,21px);
+          font-family: Ubuntu, sans-serif;
+        }
+        textarea, input[type=text], input[type=tel], input[type=email], select{
+          background-color: #F4F5F6;
+          border: 1px solid #D7DADD;
+          border-radius: 4px;
+          padding: 11px 16px;
+        }
+        textarea{
+          max-width: 357px;
+        }
+      }
+    }
+  }
+  &__title{
+    margin: 0;
+    padding-bottom: 24px;
+    @include fonts(700, 28px, 42px);
+    text-align: center;
+}
+}
+.orange {
+  &__button{
+    font-family: Ubuntu, sans-serif;
+    margin-top: 40px;
+    width: 390px;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+    color: #FFFFFF;
+    background-color: #FF5A30;
+    @include fonts(700,14px,42px);
+    padding: 0 32px;
+    &:hover{
+        cursor: pointer;
+        color: #FF5A30;
+        background-color: #FFFFFF;
+        transition: all 0.2s ease-in;
+    }
+  }
+}

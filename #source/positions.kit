@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/positions.css">
+    <script src="/js/modals.js" defer></script>
+    <title>Main page</title>
+</head>
+<body>
+
+    <main>
+
+        <!-- @import "header.html" -->
+
+        <section class="description__section">
+            <div class="container">
+                <div class="description__area">
+                    <h5 class="description__path">Homepage / About Us <span>/ Available Positions</span></h5>
+                    <h1 class="description__title">AVAILABLE POSITIONS</h1>
+                    <p class="description__text">Build your career with Createx Construction Bureau.</p>
+                </div>
+            </div>
+        </section>
+        <section class="vacancy__section">
+            <div class="container">
+                <div class="vacancy__positions">
+                    <div class="vacancy__box">
+                        <div class="vacancy__item">
+                            <div class="item__divisor">
+                                <div class="item__info">
+                                    <img src="/img/positions/outline.svg" alt="">
+                                    <p class="item__text">New York</p>
+                                    <hr>
+                                    <img src="/img/positions/Clock.svg" alt="">
+                                    <p class="item__text">Full Time</p>
+                                </div>
+                                <h3 class="item__title">Heavy Equipment Operator</h3>
+                            </div>
+                            <button class="white__button-32">APPLY NOW</button>
+                        </div>
+                        <div class="vacancy__item">
+                            <div class="item__divisor">
+                                <div class="item__info">
+                                    <img src="/img/positions/outline.svg" alt="">
+                                    <p class="item__text">San Francisco</p>
+                                    <hr>
+                                    <img src="/img/positions/Clock.svg" alt="">
+                                    <p class="item__text">Full Time</p>
+                                </div>
+                                <h3 class="item__title">Financial Compliance Analyst</h3>
+                            </div>
+                            <button class="white__button-32">APPLY NOW</button>
+                        </div>
+                        <div class="vacancy__item">
+                            <div class="item__divisor">
+                                <div class="item__info">
+                                    <img src="/img/positions/outline.svg" alt="">
+                                    <p class="item__text">New Jersey</p>
+                                    <hr>
+                                    <img src="/img/positions/Clock.svg" alt="">
+                                    <p class="item__text">Full Time</p>
+                                </div>
+                                <h3 class="item__title">Project Manager - Buildings</h3>
+                            </div>
+                            <button class="white__button-32">APPLY NOW</button>
+                        </div>
+                        <div class="vacancy__item">
+                            <div class="item__divisor">
+                                <div class="item__info">
+                                    <img src="/img/positions/outline.svg" alt="">
+                                    <p class="item__text">New York</p>
+                                    <hr>
+                                    <img src="/img/positions/Clock.svg" alt="">
+                                    <p class="item__text">Part Time</p>
+                                </div>
+                                <h3 class="item__title">Environment Specialist</h3>
+                            </div>
+                            <button class="white__button-32">APPLY NOW</button>
+                        </div>
+                        <div class="vacancy__item">
+                            <div class="item__divisor">
+                                <div class="item__info">
+                                    <img src="/img/positions/outline.svg" alt="">
+                                    <p class="item__text">New York</p>
+                                    <hr>
+                                    <img src="/img/positions/Clock.svg" alt="">
+                                    <p class="item__text">Part Time</p>
+                                </div>
+                                <h3 class="item__title">Accountant</h3>
+                            </div>
+                            <button class="white__button-32">APPLY NOW</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__sub">
+                        <h3 class="vacancy__title">Didn’t find what you were looking for?</h3>
+                        <p class="vacancy__text">Send your CV or subscribe to our newsletter 
+                            to receive information about new vacancies.
+                        </p>
+                        <div class="vacancy__area">
+                            <button class="white__button-40" id="subscribe">SUBSCRIBE</button>
+                            <button class="orange__button-40" id="send__cv">SEND CV</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="our__values">
+                    <div class="our__box">
+                        <h2 class="our__title">Employee benefits</h2>
+                        <p class="our__text">There’s always room for talent.</p>
+                    </div>
+                    <div class="our__cards">
+                        <div class="our__item">
+                            <img src="../img/positions/ic-brain.svg" alt="contract image">
+                            <h4 class="our__subtitle">Training</h4>
+                            <p class="our__subtext">Culpa nostrud commodo ea consequat aliquip reprehenderit. 
+                                Veniam velit nostrud aliquip sunt.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="our__item">
+                            <img src="../img/positions/ic-success.svg" alt="success image">
+                            <h4 class="our__subtitle">Professional Growth</h4>
+                            <p class="our__subtext">Anim reprehenderit sint voluptate exercitation adipisicing 
+                                laborum adipisicing. Minim empor est ea.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="our__item">
+                            <img src="../img/positions/ic-budget.svg" alt="budget image">
+                            <h4 class="our__subtitle">Growing Salary</h4>
+                            <p class="our__subtext">Sit veniam aute dolore adipisicing nulla sit culpa. 
+                                Minim mollit voluptate ullamco proident ea ad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bg" id="modal__subscribe">
+                <div class="modal__window">
+                    <img class="crosshair" id="modal__cross-1" src="/img/positions/Cross.svg" alt="">
+                    <h2 class="modal__title">Subscribe to our newsletter</h2>
+                    <form action="" class="modal__form">
+                        <div class="form__box">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                        </div>
+                        <div class="form__box">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Your working email">
+                        </div>
+                    </form>
+                    <button class="orange__button" type="submit" id="send__button-sub">SEND</button>
+                </div>
+            </div>
+
+            <div class="modal__bg" id="modal__cv">
+                <div class="modal__window">
+                    <img class="crosshair" id="modal__cross-2" src="/img/positions/Cross.svg" alt="">
+                    <h2 class="modal__title">Send your CV</h2>
+                    <form action="" class="modal__form">
+                        <div class="form__box">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                        </div>
+                                                
+                        <div class="form__box">
+                            <label for="location">Location*</label>
+                            <select id="location" name="location">
+                                <option value="">Choose your location</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Poland">Poland</option>
+                            </select>
+                        </div>
+                                                
+                        <div class="form__box">
+                            <label for="tel">Phone*</label>
+                            <input type="tel" id="tel" name="tel" placeholder="Your phone number">
+                        </div>
+                                                
+                        <div class="form__box">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Your working email">
+                        </div>
+                        
+                        <div class="form__box">
+                            <label for="letter">Covering letter</label>
+                            <textarea rows="2" cols="15" placeholder="Your covering letter" id="letter" name="letter"></textarea>
+                        </div>
+                    </form>
+                    <form action = "" class="upload__form">
+                        <label for="upload__btn"><img src="/img/positions/Attach.png" alt="">Attach your CV*</label>
+                        <input type="file" id="upload__btn" name = "upload__btn">
+                    </form>
+                    <button class="orange__button" type="submit" id="send__button-cv">SEND</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- @import "communication.html" -->
+
+    </main>
+
+    <!-- @import "footer.html" -->
+
+</body>
+</html>
