@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <title>Main page</title>
+</head>
+<body>
+
+    <main>
+        <section class="description__section">
+
+            <!-- @import "header.html" -->
+
+            <div class="container">
+                <div class="description__box">
+                    <h5 class="description__path">Homepage <span>/ Contacts</span></h5>
+                    <h1 class="description__title">CONTACTS</h1>
+                    <p class="description__text">Contact us for all your construction needs. 
+                        We always welcome any questions and comments.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contacts__section">
+            <div class="container">
+                <div class="contacts__box">
+                    <h1 class="our__title">Contact us</h1>
+                    <p class="our__text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+                    <div class="contacts__area">
+                        <img src="/img/contacts/image.jpg" alt="">
+                        <div class="contacts__wrapper">
+                            <form action="" class="contacts__form">
+                                <div class="form__box">
+                                    <label for="name">Name*</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name">
+                                </div>
+                                <div class="form__box">
+                                    <label for="interested">I am interested in</label>
+                                    <select id="interested" name="interested">
+                                        <option value="">Interior Design</option>
+                                        <option value="Ukraine">Modern Cottage</option>
+                                        <option value="United Kingdom">Repairs</option>
+                                        <option value="Poland">Project Development</option>
+                                    </select>
+                                </div>
+                                <div class="form__box">
+                                    <label for="phone">Phone*</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                                </div>
+                                <div class="form__box">
+                                    <label for="location">Location*</label>
+                                    <select id="location" name="location">
+                                        <option value="">New York</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Poland">Poland</option>
+                                    </select>
+                                </div>
+                                <div class="form__box">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your working email">
+                                </div>
+                                <div class="form__box">
+                                    <label for="name">Preferred contact method</label>
+                                    <div class="radio__box">
+                                        <input type="radio" id="phone__radio" name="phone__radio">
+                                        <label for="phone__radio">Phone</label>
+                                        <input type="radio" id="email__radio" name="email__radio">
+                                        <label for="name">Email</label>
+                                        <input type="radio" id="viber__radio" name="viber__radio">
+                                        <label for="name">Viber</label>
+                                    </div>
+                                </div>
+                                <div class="form__box">
+                                    <label for="letter">Message*</label>
+                                    <textarea rows="2" cols="15" placeholder="Your message" id="letter" name="message"></textarea>
+                                </div>
+                            </form>
+                            <div class="contacts__divisor">
+                                <div class="check">
+                                    <input type="checkbox" id="communication__checkbox"> 
+                                    <label for="communication__checkbox">
+                                        I agree to receive communications 
+                                        from Createx Construction Bureau.
+                                    </label>
+                                </div>
+                                <button class="orange__button-40">SEND REQUEST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offices__section">
+            <div class="container">
+                <h2 class="our__title">Our offices</h2>
+                <p class="our__text">Give us a call, send us a note or visit our office. We can’t wait to hear from you!</p>
+                <div class="our__cards">
+                    <div class="our__item">
+                        <h3>New York, USA</h3>
+                        <p class="our__subtext">8502 Preston Rd. Inglewood, New York 98380</p>
+                        <a href="#">See on the map</a>
+                        <div class="offices__info">
+                            <p><span>Call:</span> (405) 555-0128</p>
+                            <p><span>Email:</span> hello@createx.com</p>
+                            <p><span>Schedule:</span> Mon - Fri 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="our__item">
+                        <h3>New Jersey, USA</h3>
+                        <p class="our__subtext">2464 Royal Ln. Mesa, New Jersey 45463.</p>
+                        <a href="#">See on the map</a>
+                        <div class="offices__info">
+                            <p><span>Call:</span> (808) 555-0111</p>
+                            <p><span>Email:</span> hello@createx.com</p>
+                            <p><span>Schedule:</span> Mon - Fri 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="our__item">
+                        <h3>San Francisco, USA</h3>
+                        <p class="our__subtext">8502 Preston Rd. Inglewood, San Francisco 98380</p>
+                        <a href="#">See on the map</a>
+                        <div class="offices__info">
+                            <p><span>Call:</span> (505) 555-0125</p>
+                            <p><span>Email:</span> hello@createx.com</p>
+                            <p><span>Schedule:</span> Mon - Fri 10:00 - 19:00</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="offices__title-socials">Find us at</h2>
+                <div class="offices__socials">
+                    <a href="#"><img src="/img/contacts/Whatsapp.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/Messanger.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/Facebook.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/Twitter.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/YouTube.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- @import "communication.html" -->
+
+    </main>
+
+    <!-- @import "footer.html" -->
+
+</body>
+</html>

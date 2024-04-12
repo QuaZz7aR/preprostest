@@ -1,0 +1,139 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "description.scss";
+@import "buttons.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.description {
+    &__section{
+      background-image: url(/img/news/image-cover.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
+    &__area{
+      padding: 80px 0 240px 0;
+      width: 600px;
+    }
+}
+
+.categories{
+    &__title{
+      margin: 0;
+      @include fonts(700,46px,60px);
+      text-align: center;
+      padding-bottom: 40px;
+      padding-top: 120px;
+    }
+    &__news{
+      display: block;
+    }
+    &__cards{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px 30px;
+    }
+    &__item{
+      img{display: block;}
+      width: 600px;
+      border-radius: 4px;
+      box-shadow: 0 0 53px -30px;
+      height: fit-content;
+      &:hover{
+        .item__title{
+            a{
+                color: rgba(255, 90, 48, 1);
+            }
+        }
+    }
+    }
+    &__list{
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        padding-bottom: 60px;
+        .transparent__button{
+            cursor: pointer;
+            width: 180px;
+            background: transparent;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            @include fonts(700,16px,25.6px);
+            color: rgba(154, 156, 165, 1);
+            padding: 10px 0;
+        }
+        .active{
+            border: 1px solid rgba(255, 90, 48, 1);
+            color: rgba(255, 90, 48, 1);
+        }
+    }
+  }
+  .item {
+    &__box{
+      padding: 24px;
+    }
+    &__title{
+      margin: 0;
+      padding-bottom: 12px;
+      @include fonts(700,20px,30px);
+      a{
+        text-decoration: none;
+        color: #1E212C;
+      }
+    }
+    &__info{
+      display: flex;
+      hr{
+          margin: 4.5px 12px;
+          border: 0.5px solid #787A80;
+        }
+    }
+    &__text{
+      margin: 0;
+      color: #787A80;
+      @include fonts(400,14px,21px);
+    }
+    &__social{
+      display: flex;
+      gap: 8px;
+    }
+    &__description{
+      margin: 0;
+      padding-top: 16px;
+      color: #424551;
+    }
+  }
+  .pages__list{
+    margin: 0;
+    padding: 60px 0 180px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @include fonts(700,16px,25.6px);
+    .active{
+        color: rgba(255, 90, 48, 1);
+    }
+    img{
+        display: block;
+    }
+    li{
+        cursor: pointer;
+    }
+  }

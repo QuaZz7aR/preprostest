@@ -20,8 +20,7 @@
 }
 .orange__button-40{
     @include fonts(700,16px,50px);
-    width: 180px;
-    padding: 0;
+    padding: 0 40px;
 }
 .orange__button-112{
     @include fonts(700,16px,50px);
@@ -43,6 +42,5 @@
 }
 .white__button-40{
     @include fonts(700,16px,50px);
-    width: 180px;
-    padding: 0;
+    padding: 0 40px;
 }

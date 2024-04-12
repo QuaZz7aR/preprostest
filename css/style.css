@@ -776,10 +776,19 @@ body {
   border-radius: 4px;
   border: 1px solid #FF5A30;
 }
+.orange__button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .orange__button:hover {
-  cursor: pointer;
   color: #FF5A30;
+  cursor: pointer;
   background-color: #FFFFFF;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.orange__button:hover a {
+  color: #FF5A30;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -831,10 +840,19 @@ body {
   padding: 0 40px;
   border-radius: 4px;
 }
+.back .construction .construction__buttons .transparent__button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .back .construction .construction__buttons .transparent__button:hover {
-  cursor: pointer;
   color: #787A80;
+  cursor: pointer;
   background-color: #FFFFFF;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.back .construction .construction__buttons .transparent__button:hover a {
+  color: #787A80;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }

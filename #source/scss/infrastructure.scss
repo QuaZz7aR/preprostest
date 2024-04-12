@@ -1,0 +1,215 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "description.scss";
+@import "buttons.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.description {
+    &__section{
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
+    &__area{
+      padding: 80px 0 160px 0;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        padding-bottom: 0;
+        padding-top: 48px;
+    }
+    &__title{
+        @include fonts(700, 64px, 76.8px);
+        padding-bottom: 0;
+    }
+    &__news{
+        display: flex;
+        width: 500px;
+        hr{
+            margin: 4.5px 12px;
+            border: 0.5px solid #787A80;
+        }
+        .orange{
+            color: rgba(255, 90, 48, 1);
+            @include fonts(700, 16px, 25.6px);
+            padding-left: 0;
+        }
+    }
+      &__socials{
+        display: flex;
+        gap: 12px;
+    }
+    }
+    .item {
+      &__text{
+        margin: 0;
+        color: rgba(120, 122, 128, 1);
+        padding-left: 8px;
+    }
+}
+
+.news__wrapper{
+    width: 810px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.news {
+  &__section{
+    .news__shift{
+        display: block;
+        position: relative;
+        top: -80px;
+    }
+}
+  &__box{
+    h3{
+        @include fonts(700, 20px, 30px);
+        margin: 0;
+        padding-bottom: 24px;
+    }
+}
+  &__text{
+    margin: 0;
+}
+  &__quote{
+    padding: 48px 0;
+    list-style-image: url(/img/infrastructure/braces.png);
+    @include fonts(700, 20px, 30px);
+    margin: 0;
+    padding-inline-start: 38px;
+}
+  &__list{
+    padding: 24px 0;
+    list-style-image: url(/img/infrastructure/check.svg);
+    margin: 0;
+    padding-inline-start: 24px;
+}
+  &__share{
+    display: flex;
+    gap: 12px;
+    h6{
+        @include fonts(700, 16px, 25.6px);
+        margin: 0;
+    }
+}
+  &__comments{
+    padding-bottom: 120px;
+    h2{
+        @include fonts(700, 46px, 60px);
+        margin: 0;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+  &__your-comment{
+    padding-bottom: 180px;
+    h2{
+        @include fonts(700, 46px, 60px);
+        padding-bottom: 48px;
+        text-align: center;
+        margin: 0;
+    }
+}
+  &__form{
+    padding-bottom: 48px;
+}
+}
+.comments {
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+  &__item{
+    display: flex;
+    gap: 30px;
+}
+  &__info{
+    margin: 0;
+}
+  &__name{
+    margin: 0;
+    width: 150px;
+    @include fonts(700, 18px, 27px);
+}
+  &__date{
+    margin: 0;
+    @include fonts(400, 14px, 21px);
+    color: rgba(120, 122, 128, 1);
+}
+  &__comment{
+    color: rgba(66, 69, 81, 1);
+}
+  &__text{
+    margin: 0;
+    span{
+        @include fonts(700, 16px, 25.6px);
+        color: #FF5A30;
+    }
+}
+  &__reply{
+    display: flex;
+    padding-top: 16px;
+    gap: 8px;
+    p{
+        margin: 0;
+        color: rgba(120, 122, 128, 1);
+    }
+}
+}
+.form {
+  &__divisor{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 22px;
+    input[type=text], input[type=email]{
+        width: 372px;
+        padding-left: 16px;
+    }
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    input, textarea{
+        @include fonts(400,16px,25.6px);
+        font-family: Ubuntu, sans-serif;
+        color: rgba(154, 156, 165, 1);
+        padding: 13px 0 13px 16px !important;
+        max-width: 792px;
+    }
+    label{
+        @include fonts(400,16px,25.6px);
+        color: rgba(66, 69, 81, 1);
+    }
+    input[type=text], input[type=email], textarea{
+        background-color: #F4F5F6;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        padding: 11px;
+    }
+}
+}
+.post__button{
+    display: flex;
+    justify-content: center;
+}

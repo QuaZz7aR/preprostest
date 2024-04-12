@@ -1,0 +1,193 @@
+@import "mixins.scss";
+@import "header_footer.scss";
+@import "communication.scss";
+@import "description.scss";
+@import "buttons.scss";
+@import "our__cards.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #1E212C;
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+.description {
+  &__section{
+    background-image: url(/img/contacts/image-cover.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+  &__area{
+    padding: 80px 0 145px 0;
+    width: 600px;
+}
+  &__box{padding-bottom: 210px;}
+}
+
+.contacts {
+  &__box{
+    padding: 0 0 120px 0;
+    .check{
+      @include fonts(400,14px,21px);
+      display: flex;
+      align-items: start;
+      label{
+        width: 287px;
+      }
+      input[type=checkbox]{
+          appearance: none;
+          position: relative;
+          margin-right: 12px;
+          height: 16px;
+          width: 16px;
+          background-color: #D7DADD;
+          border-radius: 4px;
+          cursor: pointer;
+          &:checked{
+              background-color: #FF5A30;
+          }
+          &::before{
+              content: '';
+              position: absolute;
+              top: 1px;
+              left: 6px;
+              width: 4px;
+              height: 9px;
+              border: 1px solid transparent;
+              border-left: none;
+              border-top: none;
+              transform: rotate(45deg) scale(1);
+          }
+          &:checked::before{
+              border-color: #fff;
+          }
+      }
+    }
+  }
+  &__area{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form{
+    display: grid;
+    grid-template-columns: 285px 285px;
+    grid-gap: 24px 30px;
+    .form__box:nth-child(6){
+      gap: 20px;
+    }
+  }
+  &__divisor{
+    display: flex;
+    width: 600px;
+    gap: 72.5px;
+    padding-top: 40px;
+  }
+}
+.form {
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    label{
+        @include fonts(400,14px,21px);
+    }
+    input, select, textarea{
+        @include fonts(400,14px,21px);
+    }
+    input[type=text],input[type=tel],input[type=email], select, textarea{
+        background-color: #F4F5F6;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        padding: 11px;
+    }
+    select{
+      padding: 12.5px;
+    }
+    textarea{
+      max-width: 600px - 24px;
+      width: 600px - 24px;
+  }
+}
+}
+.radio {
+  &__box{
+    display: flex;
+    align-items: center;
+    input[type=radio]{
+      margin: 0 12px 0 0;
+    }
+    label{
+      padding-right: 24px;
+    }
+    label:last-child{
+      padding-right: 0px;
+    }
+}
+}
+
+.offices {
+  &__section{
+    background-color: rgba(244, 245, 246, 1);
+}
+  &__info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    p{
+      color: rgba(30, 33, 44, 1);
+      margin: 0;
+    }
+    span{
+      color: rgba(120, 122, 128, 1);
+    }
+}
+  &__title-socials{
+    padding-top: 120px;
+    margin: 0;
+    padding-bottom: 40px;
+    @include fonts(700,46px,59.8px);
+    text-align: center;
+  }
+  &__socials{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 120px;
+  }
+}
+.our {
+  &__title{
+    padding-top: 80px;
+}
+  &__text{
+    padding-bottom: 60px;
+}
+  &__item{
+    h3{
+      @include fonts(700, 28px, 42px);
+      padding-bottom: 24px;
+      text-align: left;
+      margin: 0;
+    }
+    align-items: start;
+    a{
+      color: rgba(255, 90, 48, 1);
+      padding-bottom: 20px;
+    }
+}
+  &__subtext{
+    padding-bottom: 4px;
+    padding-top: 0;
+    text-align: left;
+    color: rgba(30, 33, 44, 1);
+}
+}

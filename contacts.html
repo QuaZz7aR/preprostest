@@ -6,15 +6,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css//work.css">
+    <link rel="stylesheet" href="/css/contacts.css">
     <title>Main page</title>
 </head>
 <body>
 
     <main>
-
         <section class="description__section">
-            
+
 <header class="header">
     <div class="container">
         <div class="header__box">
@@ -53,152 +52,130 @@
 
             <div class="container">
                 <div class="description__box">
-                    <h5 class="description__path">Homepage <span>/ Work</span></h5>
-                    <h1 class="description__title">OUR WORK</h1>
-                    <p class="description__text">Our portfolio represents 20 years of construction experience 
-                        backed by a passion for perfect client service, 
-                        quality and innovations in consctuction industry.
+                    <h5 class="description__path">Homepage <span>/ Contacts</span></h5>
+                    <h1 class="description__title">CONTACTS</h1>
+                    <p class="description__text">Contact us for all your construction needs. 
+                        We always welcome any questions and comments.
                     </p>
                 </div>
-                <div class="description__cards">
-                    <div class="description__item active">
-                        <img src="../img/work/ic-house.svg" alt="house image">
-                        <p>All Projects</p>
-                    </div>
-                    <div class="description__item">
-                        <img src="../img/work/ic-construction.png" alt="house image">
-                        <p>Construction</p>
-                    </div>
-                    <div class="description__item">
-                        <img src="../img/work/ic-plan.png" alt="house image">
-                        <p>Project Development</p>
-                    </div>
-                    <div class="description__item">
-                        <img src="../img/work/ic-pantone.png" alt="house image">
-                        <p>Interior Design</p>
-                    </div>
-                    <div class="description__item">
-                        <img src="../img/work/ic-painting.png" alt="house image">
-                        <p>Repairs</p>
+            </div>
+        </section>
+        <section class="contacts__section">
+            <div class="container">
+                <div class="contacts__box">
+                    <h1 class="our__title">Contact us</h1>
+                    <p class="our__text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+                    <div class="contacts__area">
+                        <img src="/img/contacts/image.jpg" alt="">
+                        <div class="contacts__wrapper">
+                            <form action="" class="contacts__form">
+                                <div class="form__box">
+                                    <label for="name">Name*</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name">
+                                </div>
+                                <div class="form__box">
+                                    <label for="interested">I am interested in</label>
+                                    <select id="interested" name="interested">
+                                        <option value="">Interior Design</option>
+                                        <option value="Ukraine">Modern Cottage</option>
+                                        <option value="United Kingdom">Repairs</option>
+                                        <option value="Poland">Project Development</option>
+                                    </select>
+                                </div>
+                                <div class="form__box">
+                                    <label for="phone">Phone*</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                                </div>
+                                <div class="form__box">
+                                    <label for="location">Location*</label>
+                                    <select id="location" name="location">
+                                        <option value="">New York</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Poland">Poland</option>
+                                    </select>
+                                </div>
+                                <div class="form__box">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your working email">
+                                </div>
+                                <div class="form__box">
+                                    <label for="name">Preferred contact method</label>
+                                    <div class="radio__box">
+                                        <input type="radio" id="phone__radio" name="phone__radio">
+                                        <label for="phone__radio">Phone</label>
+                                        <input type="radio" id="email__radio" name="email__radio">
+                                        <label for="name">Email</label>
+                                        <input type="radio" id="viber__radio" name="viber__radio">
+                                        <label for="name">Viber</label>
+                                    </div>
+                                </div>
+                                <div class="form__box">
+                                    <label for="letter">Message*</label>
+                                    <textarea rows="2" cols="15" placeholder="Your message" id="letter" name="message"></textarea>
+                                </div>
+                            </form>
+                            <div class="contacts__divisor">
+                                <div class="check">
+                                    <input type="checkbox" id="communication__checkbox"> 
+                                    <label for="communication__checkbox">
+                                        I agree to receive communications 
+                                        from Createx Construction Bureau.
+                                    </label>
+                                </div>
+                                <button class="orange__button-40">SEND REQUEST</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="related__section">
+        <section class="offices__section">
             <div class="container">
-                <div class="projects">
-                    <div class="projects__cards">
-                        <div class="projects__item-1">
-                            <div class="item__box">
-                                <h4 class="item__title">Cubes Building</h4>
-                                <p class="item__text">Business Centers</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-2">
-                            <div class="item__box">
-                                <h4 class="item__title">Modern Cottage</h4>
-                                <p class="item__text">Private houses</p>
-                                <a href="/cottage.html"><button class="orange__button">VIEW PROJECT</button></a>
-                            </div>
-                        </div>
-                        <div class="projects__item-3">
-                            <div class="item__box">
-                                <h4 class="item__title">Luxury Beach House</h4>
-                                <p class="item__text">Private houses</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-4">
-                            <div class="item__box">
-                                <h4 class="item__title">Modern Double Bedroom</h4>
-                                <p class="item__text">Apartments & flats</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-5">
-                            <div class="item__box">
-                                <h4 class="item__title">Kids Bedroom With Decorations</h4>
-                                <p class="item__text">Apartments & flats</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-6">
-                            <div class="item__box">
-                                <h4 class="item__title">The Pencil Building</h4>
-                                <p class="item__text">Stores & Malls</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-7">
-                            <div class="item__box">
-                                <h4 class="item__title">Red Finger Building</h4>
-                                <p class="item__text">Business Centers</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-8">
-                            <div class="item__box">
-                                <h4 class="item__title">Scandinavian Style Interior</h4>
-                                <p class="item__text">Private houses</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
-                        </div>
-                        <div class="projects__item-9">
-                            <div class="item__box">
-                                <h4 class="item__title">Brown and Gray Painted House</h4>
-                                <p class="item__text">Private houses</p>
-                                <button class="orange__button">VIEW PROJECT</button>
-                            </div>
+                <h2 class="our__title">Our offices</h2>
+                <p class="our__text">Give us a call, send us a note or visit our office. We can’t wait to hear from you!</p>
+                <div class="our__cards">
+                    <div class="our__item">
+                        <h3>New York, USA</h3>
+                        <p class="our__subtext">8502 Preston Rd. Inglewood, New York 98380</p>
+                        <a href="#">See on the map</a>
+                        <div class="offices__info">
+                            <p><span>Call:</span> (405) 555-0128</p>
+                            <p><span>Email:</span> hello@createx.com</p>
+                            <p><span>Schedule:</span> Mon - Fri 9:00 - 18:00</p>
                         </div>
                     </div>
-                    <div class="projects__load">
-                        <button class="projects__view">
-                            <img src="../img/work/Convert.svg" alt="">
-                            <p class="projects__text">Load more</p>
-                        </button>
+                    <hr>
+                    <div class="our__item">
+                        <h3>New Jersey, USA</h3>
+                        <p class="our__subtext">2464 Royal Ln. Mesa, New Jersey 45463.</p>
+                        <a href="#">See on the map</a>
+                        <div class="offices__info">
+                            <p><span>Call:</span> (808) 555-0111</p>
+                            <p><span>Email:</span> hello@createx.com</p>
+                            <p><span>Schedule:</span> Mon - Fri 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="our__item">
+                        <h3>San Francisco, USA</h3>
+                        <p class="our__subtext">8502 Preston Rd. Inglewood, San Francisco 98380</p>
+                        <a href="#">See on the map</a>
+                        <div class="offices__info">
+                            <p><span>Call:</span> (505) 555-0125</p>
+                            <p><span>Email:</span> hello@createx.com</p>
+                            <p><span>Schedule:</span> Mon - Fri 10:00 - 19:00</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="supported__section">
-            <div class="container">
-                <div class="supported__box">
-<div class="supported__content">
-    <div class="supported__block">
-        <h2 class="supported__title">What our clients are saying</h2>
-        <img src="../img/main/profile-image.png" alt="profile photo">
-        <p class="supported__description">Ipsum aute sunt aliquip aute et occaecat. 
-            Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  
-            laboris cillum laboris voluptate minim proident exercitation ullamco. 
-        </p>
-        <div class="supported__switch">
-            <div class="supported__name">
-                <h5>Shawn Edwards</h5>
-                <p>Position, Company name</p>
-            </div>
-            <div class="supported__arrows">
-                <img src="../img/main/prev-btn.png" alt="left arrow">
-                <img src="../img/main/hover.png" alt="right arrow">
-            </div>
-        </div>
-    </div>
-    <img class="shift__img" src="../img/main/builders.jpg" alt="builders image">
-</div>                </div>
-            </div>
-        </section>
-        <section class="companies__section">
-            <div class="container">
-                <div class="companies__box">
-<h2 class="supported__title">Supported by 12+ partners</h2>
-<ul class="supported__list">
-    <li><a href="#"><img src="../img/main/client-logo.png" alt="InDepth logo"></a></li>
-    <li><a href="#"><img src="../img/main/client-logo1.png" alt="Hidher fit logo"></a></li>
-    <li><a href="#"><img src="../img/main/client-logo2.png" alt="Sentinal consulting logo"></a></li>
-    <li><a href="#"><img src="../img/main/client-logo3.png" alt="happy home logo"></a></li>
-    <li><a href="#"><img src="../img/main/client-logo4.png" alt="forsale logo"></a></li>
-    <li><a href="#"><img src="../img/main/client-logo5.png" alt="Sunset reality logo"></a></li>
-</ul>                </div>
+                <h2 class="offices__title-socials">Find us at</h2>
+                <div class="offices__socials">
+                    <a href="#"><img src="/img/contacts/Whatsapp.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/Messanger.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/Facebook.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/Twitter.png" alt=""></a>
+                    <a href="#"><img src="/img/contacts/YouTube.png" alt=""></a>
+                </div>
             </div>
         </section>
 
