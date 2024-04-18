@@ -52,16 +52,114 @@ body{
     @include fonts(700,64px,76.8px);
     padding-bottom: 60px;
 }
-  &__images{
-    display: flex;
-    gap: 20px;
-    padding-bottom: 100px;
-    padding-top: 20px;
-}
   &__goal{
     display: flex;
     justify-content: space-between;
     width: 1230px;
+}
+}
+.slider{
+  overflow: hidden;
+}
+.s1{
+  margin-left: 0;
+}
+.slides{
+  position: relative;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  input[name="r"]{
+    display: none;
+  }
+  .arrows{
+    display: flex;
+    position: absolute;
+    top: 226px;
+    left: 32px;
+  }
+  .arrow {
+    &__left{
+      width: 48px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, .5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-right: 1070px;
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+  }
+    &__right{
+      width: 48px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, .5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: (-(100% / 6));
+  }
+  #r3:checked ~ .s1{
+    margin-left: (-2 * (100% / 6));
+  }
+  #r4:checked ~ .s1{
+    margin-left: (-3 * (100% / 6));
+  }
+  #r5:checked ~ .s1{
+    margin-left: (-4 * (100% / 6));
+  }
+  #r6:checked ~ .s1{
+    margin-left: (-5 * (100% / 6));
+  }
+
+  .slide{
+    width: (100% / 6);
+    transition: all 0.6s ease;
+    img{
+      display: block;
+    }
+  }
+}
+.bar{
+  img{
+    display: block;
+    border-radius: 4px;
+    opacity: .6;
+  }
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .2s ease-in;
+    img{
+      opacity: 1;
+    }
+  }
+}
+.slider {
+  &__nav{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 20px;
 }
 }
 .goal {

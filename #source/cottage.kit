@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cottage.css">
+    <script src="/js/cottage__slider.js" defer></script>
     <title>Main page</title>
 </head>
 <body>
@@ -21,15 +22,44 @@
                 <div class="description__area">
                     <h5 class="description__path">Homepage / Work <span>/ Modern Cottage</span></h5>
                     <h1 class="description__title">Modern Cottage</h1>
-                    <img src="/img/cottage/image.jpg" alt="cottage image">
-                    <div class="description__images">
-                        <img src="/img/cottage/image (1).jpg" alt="cottage image">
-                        <img src="/img/cottage/image.png" alt="cottage image">
-                        <img src="/img/cottage/image (1).png" alt="cottage image">
-                        <img src="/img/cottage/image (2).png" alt="cottage image">
-                        <img src="/img/cottage/image (3).png" alt="cottage image">
-                        <img src="/img/cottage/image (4).png" alt="cottage image">
+
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r1" checked>
+                            <input type="radio" name="r" id="r2" >
+                            <input type="radio" name="r" id="r3" >
+                            <input type="radio" name="r" id="r4" >
+                            <input type="radio" name="r" id="r5" >
+                            <input type="radio" name="r" id="r6" >
+
+                            <div class="arrows">
+                                <div class="arrow__left" id="left__arrow">
+                                    <img src="/img/cottage/Left.png" alt="">
+                                </div>
+                                <div class="arrow__right" id="right__arrow">
+                                    <img src="/img/cottage/Right.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="slide s1"><img src="/img/cottage/image.jpg" alt="cottage image"></div>
+                            <div class="slide"><img src="/img/cottage/image.jpg" alt="cottage image"></div>
+                            <div class="slide"><img src="/img/cottage/image.jpg" alt="cottage image"></div>
+                            <div class="slide"><img src="/img/cottage/image.jpg" alt="cottage image"></div>
+                            <div class="slide"><img src="/img/cottage/image.jpg" alt="cottage image"></div>
+                            <div class="slide"><img src="/img/cottage/image.jpg" alt="cottage image"></div>
+
+                        </div>
                     </div>
+                    <div class="slider__nav">
+
+                        <label for="r1" class="bar"><img src="/img/cottage/image (1).jpg" alt="cottage image"></label>
+                        <label for="r2" class="bar"><img src="/img/cottage/slider.jpg" alt="cottage image"></label>
+                        <label for="r3" class="bar"><img src="/img/cottage/slider1.jpg" alt="cottage image"></label>
+                        <label for="r4" class="bar"><img src="/img/cottage/slider2.jpg" alt="cottage image"></label>
+                        <label for="r5" class="bar"><img src="/img/cottage/slider3.jpg" alt="cottage image"></label>
+                        <label for="r6" class="bar"><img src="/img/cottage/slider4.jpg" alt="cottage image"></label>
+                    </div>
+
                     <div class="description__goal">
                         <div class="goal__box">
                             <h2 class="goal__title">Project goal</h2>
@@ -100,27 +130,35 @@
                             <div class="item__box">
                                 <h4 class="item__title">Luxury Beach House</h4>
                                 <p class="item__text">Private Houses</p>
-                                <button class="orange__button">VIEW PROJECT</button>
+                                <a href="/cottage.html">
+                                    <button class="orange__button">VIEW PROJECT</button>
+                                </a>
                             </div>
                         </div>
                         <div class="projects__item-2 active">
                             <div class="item__box">
                                 <h4 class="item__title">Brown and Gray Painted House</h4>
                                 <p class="item__text">Private Houses</p>
-                                <button class="orange__button">VIEW PROJECT</button>
+                                <a href="/cottage.html">
+                                    <button class="orange__button">VIEW PROJECT</button>
+                                </a>
                             </div>
                         </div>
                         <div class="projects__item-3">
                             <div class="item__box">
                                 <h4 class="item__title">Scandinavian Style Interior</h4>
                                 <p class="item__text">Private houses</p>
-                                <button class="orange__button">VIEW PROJECT</button>
+                                <a href="/cottage.html">
+                                    <button class="orange__button">VIEW PROJECT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="projects__view">
                         <h3 class="view__title">Explore all our works</h3>
-                        <button class="orange__button">VIEW PORTFOLIO</button>
+                        <a href="/work.html">
+                            <button class="orange__button">VIEW PORTFOLIO</button>
+                        </a>
                     </div>
                 </div>
             </div>

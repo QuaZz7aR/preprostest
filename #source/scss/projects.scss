@@ -76,17 +76,22 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                a{
+                    text-decoration: none;
+                }
                 .orange__button{
                     display: none;
                     @include fonts(700,14px,43px);
+                    border-radius: 4px;
                     background-color: #fff;
                     color: #FF5A30;
                     border: 1px solid #FF5A30;
                     margin-top: 24px;
                     padding: 0 32px;
+                    cursor: pointer;
                     &:hover{
-                        color: #FFFFFF;
                         background-color: #FF5A30;
+                        color: #FFFFFF;
                     }
                 }
                 .item__title{
