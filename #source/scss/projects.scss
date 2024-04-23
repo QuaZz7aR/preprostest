@@ -1,5 +1,7 @@
 .arrow__box{
     display: flex;
+    gap: 10px;
+
     .arrow__left, .arrow__right{
         display: flex;
         justify-content: center;
@@ -9,10 +11,17 @@
         border-radius: 50%;
         background-color: #fff;
         cursor: pointer;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: green;
+            transform: all 0.3s ease-in;
+        }
     }
     .active{
         background-color: #FF5A30;
     }
+
 }
 .projects{
     padding: 120px 0;
@@ -33,7 +42,7 @@
     .projects__cards{
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 29.9px;
         padding-bottom: 80px;
         .projects__item-1{
             background-image: url(../../img/main/image.jpg);

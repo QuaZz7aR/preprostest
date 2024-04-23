@@ -5,6 +5,7 @@
 @import "our__cards";
 @import "projects.scss";
 @import "supported_companies.scss";
+@import "projects_slider.scss";
 
 body{
     margin: 0;
@@ -163,23 +164,47 @@ body{
     top: 152px;
   }
 }
+
 .projects{
   &{
     padding: 180px 0 100px 0;
   }
   & &__cards &__item-1{
-    background-image: url(../../img/interior__design/image2.jpg);
-    background-repeat: no-repeat;
-}
-& &__cards &__item-2{
-    background-image: url(../../img/work/image\(2\).png);
-    background-repeat: no-repeat;
-    background-size:contain;
-}
-  & &__cards &__item-3{
-    background-image: url(../../img/interior__design/image1.jpg);
-    background-repeat: no-repeat;
-}
+      background-image: url(/img/interior__design/buildings/image6.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-2{
+      background-image: url(/img/interior__design/buildings/image5.png);
+      background-repeat: no-repeat;
+  }
+      & &__cards &__item-3{
+      background-image: url(/img/interior__design/buildings/image7.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-4{
+      background-image: url(/img/interior__design/buildings/image9.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-5{
+      background-image: url(/img/interior__design/buildings/image8.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-6{
+      background-image: url(/img/interior__design/buildings/image4.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-7{
+      background-image: url(/img/interior__design/buildings/image.jpg);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-8{
+      background-image: url(/img/interior__design/buildings/image3.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-9{
+      background-image: url(/img/interior__design/buildings/image2.jpg);
+      background-repeat: no-repeat;
+  }
 }
 
 .our {

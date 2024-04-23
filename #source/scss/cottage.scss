@@ -3,6 +3,7 @@
 @import "communication.scss";
 @import "description.scss";
 @import "projects.scss";
+@import "projects_slider.scss";
 
 body{
     margin: 0;
@@ -245,17 +246,44 @@ body{
 }
 }
 
-.projects {
+.projects{
   &{
     padding-top: 200px;
-}
-  &__item-1{
-    background-image: url(/img/cottage/1.png) !important;
-}
-  &__item-2{
-    background-image: url(/img/cottage/2.png) !important;
-}
-  &__item-3{
-    background-image: url(/img/cottage/3.png) !important;
-}
+  }
+  & &__cards &__item-1{
+      background-image: url(/img/cottage/buildings/image4.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-2{
+      background-image: url(/img/cottage/buildings/image8.png);
+      background-repeat: no-repeat;
+  }
+      & &__cards &__item-3{
+      background-image: url(/img/cottage/buildings/image7.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-4{
+      background-image: url(/img/cottage/buildings/image9.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-5{
+      background-image: url(/img/cottage/buildings/image6.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-6{
+      background-image: url(/img/cottage/buildings/image5.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-7{
+      background-image: url(/img/cottage/buildings/image.jpg);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-8{
+      background-image: url(/img/cottage/buildings/image3.png);
+      background-repeat: no-repeat;
+  }
+  & &__cards &__item-9{
+      background-image: url(/img/cottage/buildings/image2.jpg);
+      background-repeat: no-repeat;
+  }
 }

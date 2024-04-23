@@ -1,0 +1,32 @@
+.projects__slider{
+    overflow: hidden;
+}
+.projects__s1{
+    margin-left: 0;
+}
+.projects__slides{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    input[name="projects_r"]{
+        display: none;
+    }
+
+    #projects_r1:checked ~ .projects__s1{
+        margin-left: 0;
+    }
+    #projects_r2:checked ~ .projects__s1{
+        margin-left: (-(100% / 3));
+    }
+    #projects_r3:checked ~ .projects__s1{
+        margin-left: (-2 * (100% / 3));
+    }
+
+    .projects__slide{
+      width: (100% / 3);
+      transition: all 0.6s ease;
+      img{
+        display: block;
+      }
+    }
+}

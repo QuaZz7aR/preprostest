@@ -478,6 +478,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
 }
 .arrow__box .arrow__left, .arrow__box .arrow__right {
   display: -webkit-box;
@@ -494,6 +495,14 @@
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
+}
+.arrow__box .arrow__left:hover, .arrow__box .arrow__right:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: green;
+  -webkit-transform: all 0.3s ease-in;
+          transform: all 0.3s ease-in;
 }
 .arrow__box .active {
   background-color: #FF5A30;
@@ -532,7 +541,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 29.9px;
   padding-bottom: 80px;
 }
 .projects .projects__cards .projects__item-1 {
@@ -736,6 +745,42 @@
           align-items: center;
 }
 
+.projects__slider {
+  overflow: hidden;
+}
+
+.projects__s1 {
+  margin-left: 0;
+}
+
+.projects__slides {
+  width: 300%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects__slides input[name=projects_r] {
+  display: none;
+}
+.projects__slides #projects_r1:checked ~ .projects__s1 {
+  margin-left: 0;
+}
+.projects__slides #projects_r2:checked ~ .projects__s1 {
+  margin-left: -33.3333333333%;
+}
+.projects__slides #projects_r3:checked ~ .projects__s1 {
+  margin-left: -66.6666666667%;
+}
+.projects__slides .projects__slide {
+  width: 33.3333333333%;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.projects__slides .projects__slide img {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -914,16 +959,39 @@ body {
   padding: 180px 0 100px 0;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(../../img/interior__design/image2.jpg);
+  background-image: url(/img/interior__design/buildings/image6.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(../../img/work/image\(2\).png);
+  background-image: url(/img/interior__design/buildings/image5.png);
   background-repeat: no-repeat;
-  background-size: contain;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(../../img/interior__design/image1.jpg);
+  background-image: url(/img/interior__design/buildings/image7.png);
+  background-repeat: no-repeat;
+}
+.projects .projects__cards .projects__item-4 {
+  background-image: url(/img/interior__design/buildings/image9.png);
+  background-repeat: no-repeat;
+}
+.projects .projects__cards .projects__item-5 {
+  background-image: url(/img/interior__design/buildings/image8.png);
+  background-repeat: no-repeat;
+}
+.projects .projects__cards .projects__item-6 {
+  background-image: url(/img/interior__design/buildings/image4.png);
+  background-repeat: no-repeat;
+}
+.projects .projects__cards .projects__item-7 {
+  background-image: url(/img/interior__design/buildings/image.jpg);
+  background-repeat: no-repeat;
+}
+.projects .projects__cards .projects__item-8 {
+  background-image: url(/img/interior__design/buildings/image3.png);
+  background-repeat: no-repeat;
+}
+.projects .projects__cards .projects__item-9 {
+  background-image: url(/img/interior__design/buildings/image2.jpg);
   background-repeat: no-repeat;
 }
 

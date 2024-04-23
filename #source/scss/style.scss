@@ -5,6 +5,7 @@
 @import "supported_clients.scss";
 @import "our__cards.scss";
 @import "projects.scss";
+@import "projects_slider.scss";
 
 body{
     margin: 0;
@@ -43,6 +44,45 @@ body{
         }
     }
 }
+.projects{
+    & &__cards &__item-1{
+        background-image: url(/img/main/buildings/image.jpg);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-2{
+        background-image: url(/img/main/buildings/image2.jpg);
+        background-repeat: no-repeat;
+    }
+        & &__cards &__item-3{
+        background-image: url(/img/main/buildings/image3.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-4{
+        background-image: url(/img/main/buildings/image9.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-5{
+        background-image: url(/img/main/buildings/image4.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-6{
+        background-image: url(/img/main/buildings/image5.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-7{
+        background-image: url(/img/main/buildings/image6.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-8{
+        background-image: url(/img/main/buildings/image7.png);
+        background-repeat: no-repeat;
+    }
+    & &__cards &__item-9{
+        background-image: url(/img/main/buildings/image8.png);
+        background-repeat: no-repeat;
+    }
+}
+
 
 .back{
     background-image: url(../../img/main/bg-image.jpg);
