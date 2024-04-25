@@ -103,6 +103,7 @@
             margin: 0;
             padding: 13px;
             @include fonts(400, 14px, 21px);
+            font-family: Ubuntu, sans-serif;
             background-color: rgba(255, 255, 255, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 4px 0 0 4px;
@@ -113,6 +114,7 @@
             margin: 0;
             padding: 0 16px;
             @include fonts(700, 14px, 44px);
+            font-family: Ubuntu, sans-serif;
             background-color: #FF5A30;
             border-radius: 0px 4px 4px 0px;
             border: none;
@@ -140,7 +142,7 @@
 .info__box{
     .info__title{
         margin: 0;
-        @include fonts(700, 16px, 24px)
+        @include fonts(700, 16px, 24px);
     }
     .info__list{
         list-style: none;

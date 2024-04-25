@@ -102,6 +102,7 @@ body{
     }
     input, select, textarea{
         @include fonts(400,14px,21px);
+        font-family: Ubuntu, sans-serif;
     }
     input[type=text],input[type=tel],input[type=email], select, textarea{
         background-color: #F4F5F6;
@@ -113,7 +114,10 @@ body{
       padding: 12.5px;
     }
     textarea{
+      min-width: 120px;
       max-width: 600px - 24px;
+      min-height: 20px;
+      max-height: 146px;
       width: 600px - 24px;
     }
   }

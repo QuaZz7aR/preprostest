@@ -23,6 +23,7 @@ body{
 .orange__button{
     color: #FFFFFF;
     @include fonts(700,16px,50px);
+    font-family: Ubuntu, sans-serif;
     background-color: #FF5A30;
     border: none;
     padding: 0 112px;
@@ -38,6 +39,7 @@ body{
 .orange__button-small{
   color: #FF5A30;
   @include fonts(700,12px,34px);
+  font-family: Ubuntu, sans-serif;
   background-color: #FFFFFF;
   border: none;
   padding: 0 24px;
@@ -184,10 +186,10 @@ body{
   &__box{
     text-align: center;
     padding-bottom: 60px;
-}
+  }
   &__cards{
-     text-align: center;
-}
+    text-align: center;
+  }
 }
 .arrow {
   &__box{
@@ -301,14 +303,13 @@ body{
 .worldwide {
   &__section{
     background-color: rgba(244, 245, 246, 1);
-}
-}
-.our {
-  &__box{
-    padding: 80px 0 120px 0;
-}
-  &__title{
-    padding-bottom: 60px;
-
-}
+    .our {
+      &__box{
+        padding: 80px 0 120px 0;
+      }
+      &__title{
+        padding-bottom: 60px;
+      }
+    }
+  }
 }

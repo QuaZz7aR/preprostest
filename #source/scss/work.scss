@@ -23,6 +23,7 @@ body{
 .orange__button{
     color: #FFFFFF;
     @include fonts(700,16px,50px);
+    font-family: Ubuntu, sans-serif;
     background-color: #FF5A30;
     border: none;
     padding: 0 112px;

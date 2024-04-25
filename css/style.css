@@ -151,6 +151,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  font-family: Ubuntu, sans-serif;
   background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px 0 0 4px;
@@ -162,6 +163,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 44px;
+  font-family: Ubuntu, sans-serif;
   background-color: #FF5A30;
   border-radius: 0px 4px 4px 0px;
   border: none;
@@ -307,17 +309,29 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  font-family: Ubuntu, sans-serif;
 }
 .communication__back .wrapper .communication form .form__item input {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  font-family: Ubuntu, sans-serif;
 }
-.communication__back .wrapper .communication form .form__item input[type=text], .communication__back .wrapper .communication form .form__item input[type=tel], .communication__back .wrapper .communication form .form__item input[type=email] {
+.communication__back .wrapper .communication form .form__item input[type=text], .communication__back .wrapper .communication form .form__item input[type=tel], .communication__back .wrapper .communication form .form__item input[type=email], .communication__back .wrapper .communication form .form__item textarea {
   background-color: #F4F5F6;
   border: 1px solid #D7DADD;
   border-radius: 4px;
   padding: 11px;
+}
+.communication__back .wrapper .communication form .form__item textarea {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: Ubuntu, sans-serif;
+  min-width: 120px;
+  max-width: 454px;
+  min-height: 20px;
+  max-height: 42px;
 }
 .communication__back .wrapper .communication form .check {
   display: block;
@@ -828,6 +842,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 48px;
+  font-family: Ubuntu, sans-serif;
   background-color: #FF5A30;
   border: none;
   padding: 0 40px;
@@ -930,6 +945,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 52px;
+  font-family: Ubuntu, sans-serif;
   background-color: transparent;
   border: 1px solid #FFFFFF;
   padding: 0 40px;
@@ -1089,11 +1105,13 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  font-family: Ubuntu, sans-serif;
 }
 .construction__bureau .question .question__input .orange__button {
   font-size: 14px;
   font-weight: 700;
   line-height: 41px;
+  font-family: Ubuntu, sans-serif;
   padding: 0 32px;
 }
 .construction__bureau .question .question__input input[type=text], .construction__bureau .question .question__input input[type=tel] {
@@ -1237,9 +1255,20 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
+.facts__item a {
+  text-decoration: none;
+  color: #1E212C;
+}
+.facts__item a:hover {
+  cursor: pointer;
+  color: #FF5A30;
+}
+.facts__item img {
+  display: block;
+}
 
 .item__box {
-  padding: 18px 24px 24px 24px;
+  padding: 24px;
 }
 .item__title {
   margin: 0;
@@ -1292,8 +1321,22 @@ body {
   -webkit-box-shadow: 0 0 53px -30px;
           box-shadow: 0 0 53px -30px;
 }
+.news__divisor .facts__item-mini a {
+  text-decoration: none;
+  color: #1E212C;
+}
+.news__divisor .facts__item-mini a:hover {
+  cursor: pointer;
+  color: #FF5A30;
+}
+.news__divisor .facts__item-mini img {
+  display: block;
+}
+.news__divisor .facts__item-mini .item__title {
+  padding-bottom: 8px;
+}
 .news__divisor .item__box {
-  padding-top: 5px;
+  padding-top: 16px;
 }
 .news__view {
   display: -webkit-box;
