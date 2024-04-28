@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/about.css">
+    <script src="/js/history_slider.js" defer></script>
     <title>Main page</title>
 </head>
 <body>
@@ -116,28 +117,53 @@
                     <div class="history__area">
                         <div class="history__way">
                             <h2 class="history__title">Our history</h2>
-                            <ul class="history__dates">
-                                <li class="active">Present</li>
-                                <li>March 2019</li>
-                                <li>November 2018</li>
-                                <li>July 2015</li>
-                                <li>August 2010</li>
-                                <li>February 2007</li>
-                                <li>May 2004</li>
-                                <li>October 2001</li>
-                                <li>June 2000</li>
+                            <ul class="history__dates slider__nav">
+                                <li><label for="r1" class="bar">Present</label></li>
+                                <li><label for="r2" class="bar">March 2019</label></li>
+                                <li><label for="r3" class="bar">November 2018</label></li>
+                                <li><label for="r4" class="bar">July 2015</label></li>
+                                <li><label for="r5" class="bar">August 2010</label></li>
+                                <li><label for="r6" class="bar">February 2007</label></li>
+                                <li><label for="r7" class="bar">May 2004</label></li>
+                                <li><label for="r8" class="bar">October 2001</label></li>
+                                <li><label for="r9" class="bar">June 2000</label></li>
                             </ul>
                         </div>
+
                         <div class="history__slides">
                             <div class="arrow__box">
-                                <div class="arrow__left">
+                                <div class="arrow__left" id="left__arrow">
                                     <img src="../img/main/Line(Stroke).png" alt="line left">
                                 </div>
-                                <div class="arrow__right active">
+                                <div class="arrow__right active" id="right__arrow">
                                     <img src="../img/main/Line(right).png" alt="line right">
                                 </div>
                             </div>
-                            <img src="/img/about/image (1).jpg" alt="">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="r" id="r1" checked>
+                                    <input type="radio" name="r" id="r2" >
+                                    <input type="radio" name="r" id="r3" >
+                                    <input type="radio" name="r" id="r4" >
+                                    <input type="radio" name="r" id="r5" >
+                                    <input type="radio" name="r" id="r6" >
+                                    <input type="radio" name="r" id="r7" >
+                                    <input type="radio" name="r" id="r8" >
+                                    <input type="radio" name="r" id="r9" >
+        
+                                    <div class="slide s1"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    <div class="slide"><img src="/img/about/image (1).jpg" alt="cottage image"></div>
+                                    
+                                </div>
+                            </div>
+
                             <p class="history__text">Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. 
                                 Eu nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam 
                                 posuere malesuada magnis. Bcelerisque dapibus. 

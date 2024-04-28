@@ -13,6 +13,10 @@ function toggleModal(id, event){
     }
 }
 
+let collection = document.querySelectorAll(".apply__btn").forEach(element => {
+    element.addEventListener("click", (event) => toggleModal("modal__cv", event))
+})
+
 document.getElementById("subscribe").addEventListener("click", (event) => toggleModal("modal__subscribe", event))
 
 document.getElementById("send__cv").addEventListener("click", (event) => toggleModal("modal__cv", event))
