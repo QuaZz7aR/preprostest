@@ -248,7 +248,7 @@
 }
 
 .communication__back {
-  background: url(../../img/main/communication.jpg);
+  background: url(/img/main/communication.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -589,15 +589,15 @@
   padding-bottom: 80px;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(../../img/main/image.jpg);
+  background-image: url(/img/main/image.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(../../img/main/image2.jpg);
+  background-image: url(/img/main/image2.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(../../img/main/image3.png);
+  background-image: url(/img/main/image3.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-1,
@@ -891,7 +891,7 @@ body {
           box-shadow: 0 10px 15px rgba(30, 33, 44, 0.031372549);
 }
 .quotation__list {
-  list-style-image: url(img/about/braces.svg);
+  list-style-image: url(/img/about/braces.svg);
   margin: 0;
   padding-bottom: 60px;
   font-size: 20px;
@@ -1074,35 +1074,35 @@ body {
 }
 
 .item__box-1 {
-  background-image: url(img/about/team/image.jpg);
+  background-image: url(/img/about/team/image.jpg);
 }
 
 .item__box-2 {
-  background-image: url(img/about/team/image.png);
+  background-image: url(/img/about/team/image.png);
 }
 
 .item__box-3 {
-  background-image: url(img/about/team/image\(1\).png);
+  background-image: url(/img/about/team/image\(1\).png);
 }
 
 .item__box-4 {
-  background-image: url(img/about/team/image\(2\).png);
+  background-image: url(/img/about/team/image\(2\).png);
 }
 
 .item__box-5 {
-  background-image: url(img/about/team/image\(3\).png);
+  background-image: url(/img/about/team/image\(3\).png);
 }
 
 .item__box-6 {
-  background-image: url(img/about/team/image\(4\).png);
+  background-image: url(/img/about/team/image\(4\).png);
 }
 
 .item__box-7 {
-  background-image: url(img/about/team/image\(5\).png);
+  background-image: url(/img/about/team/image\(5\).png);
 }
 
 .item__box-8 {
-  background-image: url(img/about/team/image\(6\).png);
+  background-image: url(/img/about/team/image\(6\).png);
 }
 
 .item__socials {

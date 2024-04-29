@@ -54,7 +54,7 @@ body{
   }
 }
 .description__section{
-    background-image: url(../../img/interior__design/bg-image.png);
+    background-image: url(/img/interior__design/bg-image.png);
     background-position: 103% 50%;
     background-repeat: no-repeat;
 }
@@ -80,11 +80,11 @@ body{
 }
   &__adv{
     .minus{
-        list-style-image: url(../../img/interior__design/Minus.png);
+        list-style-image: url(/img/interior__design/Minus.png);
         margin: 0;
     }
     .plus{
-        list-style-image: url(../../img/interior__design/Plus.png);
+        list-style-image: url(/img/interior__design/Plus.png);
         margin: 0;
     }
   }
@@ -223,7 +223,7 @@ body{
         top: -12%;
         left: -5%;
         z-index: -1;
-        background-image: url(../../img/main/facts_bg-image.png);
+        background-image: url(/img/main/facts_bg-image.png);
         background-repeat: no-repeat;
         transform: rotate(3deg);
     }

@@ -248,7 +248,7 @@
 }
 
 .communication__back {
-  background: url(../../img/main/communication.jpg);
+  background: url(/img/main/communication.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -559,15 +559,15 @@
   padding-bottom: 80px;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(../../img/main/image.jpg);
+  background-image: url(/img/main/image.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(../../img/main/image2.jpg);
+  background-image: url(/img/main/image2.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(../../img/main/image3.png);
+  background-image: url(/img/main/image3.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-1,
@@ -852,7 +852,7 @@ body {
 }
 
 .description__section {
-  background-image: url(../../img/interior__design/bg-image.png);
+  background-image: url(/img/interior__design/bg-image.png);
   background-position: 103% 50%;
   background-repeat: no-repeat;
 }
@@ -879,11 +879,11 @@ body {
   line-height: 60px;
 }
 .offer__adv .minus {
-  list-style-image: url(../../img/interior__design/Minus.png);
+  list-style-image: url(/img/interior__design/Minus.png);
   margin: 0;
 }
 .offer__adv .plus {
-  list-style-image: url(../../img/interior__design/Plus.png);
+  list-style-image: url(/img/interior__design/Plus.png);
   margin: 0;
 }
 .offer__subtitle {
@@ -1025,7 +1025,7 @@ body {
   top: -12%;
   left: -5%;
   z-index: -1;
-  background-image: url(../../img/main/facts_bg-image.png);
+  background-image: url(/img/main/facts_bg-image.png);
   background-repeat: no-repeat;
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);

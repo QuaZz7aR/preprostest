@@ -248,7 +248,7 @@
 }
 
 .communication__back {
-  background: url(../../img/main/communication.jpg);
+  background: url(/img/main/communication.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }

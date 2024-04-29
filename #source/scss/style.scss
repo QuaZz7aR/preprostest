@@ -86,7 +86,7 @@ body{
 
 
 .back{
-    background-image: url(../../img/main/bg-image.jpg);
+    background-image: url(/img/main/bg-image.jpg);
     background-size: cover;
     color: #FFFFFF;
     .construction{
@@ -176,7 +176,7 @@ body{
             width: 100%;
             position: relative;
             height: 500px;
-            background-image: url(../../img/main/image.png);
+            background-image: url(/img/main/image.png);
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -250,7 +250,7 @@ body{
     }
 }
 .services__back{
-    background-image: url(../../img/main/background.jpg);
+    background-image: url(/img/main/background.jpg);
     .services{
         padding-top: 212px;
         @include fonts(700,20px,30px);
@@ -272,7 +272,7 @@ body{
                 }
             }
             .active{
-                background: url(../../img/main/card.jpg);
+                background: url(/img/main/card.jpg);
                 color: #FFFFFF;
             }
         }
@@ -302,7 +302,7 @@ body{
         top: -12%;
         left: -5%;
         z-index: -1;
-        background-image: url(../../img/main/facts_bg-image.png);
+        background-image: url(/img/main/facts_bg-image.png);
         background-repeat: no-repeat;
         transform: rotate(3deg);
     }

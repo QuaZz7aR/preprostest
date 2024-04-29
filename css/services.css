@@ -248,7 +248,7 @@
 }
 
 .communication__back {
-  background: url(../../img/main/communication.jpg);
+  background: url(/img/main/communication.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -468,7 +468,7 @@ body {
 }
 
 .description__section {
-  background-image: url(../../img/services/desc__bg.png);
+  background-image: url(/img/services/desc__bg.png);
   background-position: 104% 50%;
   background-repeat: no-repeat;
 }

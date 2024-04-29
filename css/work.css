@@ -248,7 +248,7 @@
 }
 
 .communication__back {
-  background: url(../../img/main/communication.jpg);
+  background: url(/img/main/communication.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -591,15 +591,15 @@
   padding-bottom: 80px;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(../../img/main/image.jpg);
+  background-image: url(/img/main/image.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(../../img/main/image2.jpg);
+  background-image: url(/img/main/image2.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(../../img/main/image3.png);
+  background-image: url(/img/main/image3.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-1,
@@ -817,7 +817,7 @@ body {
 }
 
 .description__section {
-  background-image: url(../../img/work/bg-desc.png);
+  background-image: url(/img/work/bg-desc.png);
   background-position: 103% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -834,39 +834,39 @@ body {
   padding-bottom: 60px;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(../../img/work/image\(7\).png);
+  background-image: url(/img/work/image\(7\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(../../img/work/image\(8\).png);
+  background-image: url(/img/work/image\(8\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(../../img/work/image\(1\).png);
+  background-image: url(/img/work/image\(1\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-4 {
-  background-image: url(../../img/work/image\(2\).png);
+  background-image: url(/img/work/image\(2\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-5 {
-  background-image: url(../../img/work/image\(3\).png);
+  background-image: url(/img/work/image\(3\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-6 {
-  background-image: url(../../img/work/image.png);
+  background-image: url(/img/work/image.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-7 {
-  background-image: url(../../img/work/image\(4\).png);
+  background-image: url(/img/work/image\(4\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-8 {
-  background-image: url(../../img/work/image\(5\).png);
+  background-image: url(/img/work/image\(5\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-9 {
-  background-image: url(../../img/work/image\(6\).png);
+  background-image: url(/img/work/image\(6\).png);
   background-repeat: no-repeat;
 }
 .projects .projects__view {
