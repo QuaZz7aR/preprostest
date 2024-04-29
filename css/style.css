@@ -1032,6 +1032,8 @@ body {
 .construction__bureau .bureau .bureau__video .youtube__link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .construction__bureau .bureau .bureau__video .bureau__circle {
   position: absolute;

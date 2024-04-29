@@ -184,6 +184,7 @@ body{
             .youtube__link{
                 &:hover{
                     transform: scale(1.1);
+                    transition: all .2s ease;
                 }
             }
             .bureau__circle{
