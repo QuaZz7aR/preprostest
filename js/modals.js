@@ -1,5 +1,5 @@
 function toggleModal(id, event){
-    event.stopPropagation();
+    if (event.target !== event.currentTarget) { return; }
     let sub = document.getElementById(id);
 
     if(sub.style.display === "flex"){
