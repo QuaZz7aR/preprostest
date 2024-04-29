@@ -53,7 +53,7 @@ body{
   }
 }
 .description__section{
-    background-image: url(../img/about/Group\ 273.png);
+    background-image: url(/img/about/Group\ 273.png);
     background-position: 100% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ body{
 
 .information {
   &__section{
-    background-image: url(../img/about/bg-image.png);
+    background-image: url(/img/about/bg-image.png);
     background-position: 100% -880%;
     background-repeat: no-repeat;
 }
@@ -112,7 +112,7 @@ body{
     box-shadow: 0 10px 15px #1E212C08;
 }
   &__list{
-    list-style-image: url(../img/about/braces.svg);
+    list-style-image: url(/img/about/braces.svg);
     margin: 0;
     padding-bottom: 60px;
     @include fonts(700,20px,30px);
