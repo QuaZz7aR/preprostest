@@ -91,14 +91,14 @@ body{
 }
   &__quote{
     padding: 48px 0;
-    list-style-image: url(/img/infrastructure/braces.png);
+    list-style-image: url(../img/infrastructure/braces.png);
     @include fonts(700, 20px, 30px);
     margin: 0;
     padding-inline-start: 38px;
 }
   &__list{
     padding: 24px 0;
-    list-style-image: url(/img/infrastructure/check.svg);
+    list-style-image: url(../img/infrastructure/check.svg);
     margin: 0;
     padding-inline-start: 24px;
 }

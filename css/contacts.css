@@ -575,7 +575,7 @@ body {
 }
 
 .description__section {
-  background-image: url(/img/contacts/image-cover.png);
+  background-image: url(../img/contacts/image-cover.png);
   background-repeat: no-repeat;
   background-position: 100%;
 }

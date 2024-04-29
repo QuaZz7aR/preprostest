@@ -502,15 +502,15 @@
   padding-bottom: 80px;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(/img/main/image.jpg);
+  background-image: url(../img/main/image.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(/img/main/image2.jpg);
+  background-image: url(../img/main/image2.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(/img/main/image3.png);
+  background-image: url(../img/main/image3.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-1,
@@ -748,7 +748,7 @@ body {
 }
 .description__section {
   background-color: #fff;
-  background-image: url(/img/cottage/bg-image.png);
+  background-image: url(../img/cottage/bg-image.png);
   background-position: 100% 50%;
   background-repeat: no-repeat;
 }
@@ -987,7 +987,7 @@ body {
   margin: 0;
   -webkit-padding-start: 28px;
           padding-inline-start: 28px;
-  list-style-image: url(/img/cottage/check.svg);
+  list-style-image: url(../img/cottage/check.svg);
 }
 .decisions__list li {
   padding-bottom: 16px;
@@ -1000,38 +1000,38 @@ body {
   padding-top: 200px;
 }
 .projects .projects__cards .projects__item-1 {
-  background-image: url(/img/cottage/buildings/image4.png);
+  background-image: url(../img/cottage/buildings/image4.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(/img/cottage/buildings/image8.png);
+  background-image: url(../img/cottage/buildings/image8.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(/img/cottage/buildings/image7.png);
+  background-image: url(../img/cottage/buildings/image7.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-4 {
-  background-image: url(/img/cottage/buildings/image9.png);
+  background-image: url(../img/cottage/buildings/image9.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-5 {
-  background-image: url(/img/cottage/buildings/image6.png);
+  background-image: url(../img/cottage/buildings/image6.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-6 {
-  background-image: url(/img/cottage/buildings/image5.png);
+  background-image: url(../img/cottage/buildings/image5.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-7 {
-  background-image: url(/img/cottage/buildings/image.jpg);
+  background-image: url(../img/cottage/buildings/image.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-8 {
-  background-image: url(/img/cottage/buildings/image3.png);
+  background-image: url(../img/cottage/buildings/image3.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-9 {
-  background-image: url(/img/cottage/buildings/image2.jpg);
+  background-image: url(../img/cottage/buildings/image2.jpg);
   background-repeat: no-repeat;
 }

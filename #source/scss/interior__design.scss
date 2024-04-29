@@ -54,7 +54,7 @@ body{
   }
 }
 .description__section{
-    background-image: url(/img/interior__design/bg-image.png);
+    background-image: url(../img/interior__design/bg-image.png);
     background-position: 103% 50%;
     background-repeat: no-repeat;
 }
@@ -80,11 +80,11 @@ body{
 }
   &__adv{
     .minus{
-        list-style-image: url(/img/interior__design/Minus.png);
+        list-style-image: url(../img/interior__design/Minus.png);
         margin: 0;
     }
     .plus{
-        list-style-image: url(/img/interior__design/Plus.png);
+        list-style-image: url(../img/interior__design/Plus.png);
         margin: 0;
     }
   }
@@ -172,39 +172,39 @@ body{
     padding: 180px 0 100px 0;
   }
   & &__cards &__item-1{
-      background-image: url(/img/interior__design/buildings/image6.png);
+      background-image: url(../img/interior__design/buildings/image6.png);
       background-repeat: no-repeat;
   }
   & &__cards &__item-2{
-      background-image: url(/img/interior__design/buildings/image5.png);
+      background-image: url(../img/interior__design/buildings/image5.png);
       background-repeat: no-repeat;
   }
       & &__cards &__item-3{
-      background-image: url(/img/interior__design/buildings/image7.png);
+      background-image: url(../img/interior__design/buildings/image7.png);
       background-repeat: no-repeat;
   }
   & &__cards &__item-4{
-      background-image: url(/img/interior__design/buildings/image9.png);
+      background-image: url(../img/interior__design/buildings/image9.png);
       background-repeat: no-repeat;
   }
   & &__cards &__item-5{
-      background-image: url(/img/interior__design/buildings/image8.png);
+      background-image: url(../img/interior__design/buildings/image8.png);
       background-repeat: no-repeat;
   }
   & &__cards &__item-6{
-      background-image: url(/img/interior__design/buildings/image4.png);
+      background-image: url(../img/interior__design/buildings/image4.png);
       background-repeat: no-repeat;
   }
   & &__cards &__item-7{
-      background-image: url(/img/interior__design/buildings/image.jpg);
+      background-image: url(../img/interior__design/buildings/image.jpg);
       background-repeat: no-repeat;
   }
   & &__cards &__item-8{
-      background-image: url(/img/interior__design/buildings/image3.png);
+      background-image: url(../img/interior__design/buildings/image3.png);
       background-repeat: no-repeat;
   }
   & &__cards &__item-9{
-      background-image: url(/img/interior__design/buildings/image2.jpg);
+      background-image: url(../img/interior__design/buildings/image2.jpg);
       background-repeat: no-repeat;
   }
 }
@@ -223,7 +223,7 @@ body{
         top: -12%;
         left: -5%;
         z-index: -1;
-        background-image: url(/img/main/facts_bg-image.png);
+        background-image: url(../img/main/facts_bg-image.png);
         background-repeat: no-repeat;
         transform: rotate(3deg);
     }

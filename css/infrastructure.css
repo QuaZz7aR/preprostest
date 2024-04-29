@@ -606,7 +606,7 @@ body {
 }
 .news__quote {
   padding: 48px 0;
-  list-style-image: url(/img/infrastructure/braces.png);
+  list-style-image: url(../img/infrastructure/braces.png);
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -616,7 +616,7 @@ body {
 }
 .news__list {
   padding: 24px 0;
-  list-style-image: url(/img/infrastructure/check.svg);
+  list-style-image: url(../img/infrastructure/check.svg);
   margin: 0;
   -webkit-padding-start: 24px;
           padding-inline-start: 24px;
