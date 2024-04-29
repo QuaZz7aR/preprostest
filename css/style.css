@@ -867,44 +867,44 @@ body {
 }
 
 .projects .projects__cards .projects__item-1 {
-  background-image: url(/img/main/buildings/image.jpg);
+  background-image: url(../img/main/buildings/image.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-2 {
-  background-image: url(/img/main/buildings/image2.jpg);
+  background-image: url(../img/main/buildings/image2.jpg);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-3 {
-  background-image: url(/img/main/buildings/image3.png);
+  background-image: url(../img/main/buildings/image3.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-4 {
-  background-image: url(/img/main/buildings/image9.png);
+  background-image: url(../img/main/buildings/image9.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-5 {
-  background-image: url(/img/main/buildings/image4.png);
+  background-image: url(../img/main/buildings/image4.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-6 {
-  background-image: url(/img/main/buildings/image5.png);
+  background-image: url(../img/main/buildings/image5.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-7 {
-  background-image: url(/img/main/buildings/image6.png);
+  background-image: url(../img/main/buildings/image6.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-8 {
-  background-image: url(/img/main/buildings/image7.png);
+  background-image: url(../img/main/buildings/image7.png);
   background-repeat: no-repeat;
 }
 .projects .projects__cards .projects__item-9 {
-  background-image: url(/img/main/buildings/image8.png);
+  background-image: url(../img/main/buildings/image8.png);
   background-repeat: no-repeat;
 }
 
 .back {
-  background-image: url(/img/main/bg-image.jpg);
+  background-image: url(../img/main/bg-image.jpg);
   background-size: cover;
   color: #FFFFFF;
 }
@@ -1014,7 +1014,7 @@ body {
   width: 100%;
   position: relative;
   height: 500px;
-  background-image: url(/img/main/image.png);
+  background-image: url(../img/main/image.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1122,7 +1122,7 @@ body {
 }
 
 .services__back {
-  background-image: url(/img/main/background.jpg);
+  background-image: url(../img/main/background.jpg);
 }
 .services__back .services {
   padding-top: 212px;
@@ -1160,7 +1160,7 @@ body {
   margin: 0;
 }
 .services__back .services .services__cards .active {
-  background: url(/img/main/card.jpg);
+  background: url(../img/main/card.jpg);
   color: #FFFFFF;
 }
 
@@ -1196,7 +1196,7 @@ body {
   top: -12%;
   left: -5%;
   z-index: -1;
-  background-image: url(/img/main/facts_bg-image.png);
+  background-image: url(../img/main/facts_bg-image.png);
   background-repeat: no-repeat;
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
