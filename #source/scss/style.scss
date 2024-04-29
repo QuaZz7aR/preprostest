@@ -181,6 +181,11 @@ body{
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            .youtube__link{
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
             .bureau__circle{
                 position: absolute;
                 display: flex;
