@@ -816,14 +816,14 @@ body {
 }
 
 .description__section {
-  background-image: url(/img/about/Group\ 273.png);
+  background-image: url(../img/about/Group\ 273.png);
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .information__section {
-  background-image: url(/img/about/bg-image.png);
+  background-image: url(../img/about/bg-image.png);
   background-position: 100% -880%;
   background-repeat: no-repeat;
 }
@@ -891,7 +891,7 @@ body {
           box-shadow: 0 10px 15px rgba(30, 33, 44, 0.031372549);
 }
 .quotation__list {
-  list-style-image: url(/img/about/braces.svg);
+  list-style-image: url(../img/about/braces.svg);
   margin: 0;
   padding-bottom: 60px;
   font-size: 20px;
@@ -1074,35 +1074,35 @@ body {
 }
 
 .item__box-1 {
-  background-image: url(/img/about/team/image.jpg);
+  background-image: url(../img/about/team/image.jpg);
 }
 
 .item__box-2 {
-  background-image: url(/img/about/team/image.png);
+  background-image: url(../img/about/team/image.png);
 }
 
 .item__box-3 {
-  background-image: url(/img/about/team/image\(1\).png);
+  background-image: url(../img/about/team/image\(1\).png);
 }
 
 .item__box-4 {
-  background-image: url(/img/about/team/image\(2\).png);
+  background-image: url(../img/about/team/image\(2\).png);
 }
 
 .item__box-5 {
-  background-image: url(/img/about/team/image\(3\).png);
+  background-image: url(../img/about/team/image\(3\).png);
 }
 
 .item__box-6 {
-  background-image: url(/img/about/team/image\(4\).png);
+  background-image: url(../img/about/team/image\(4\).png);
 }
 
 .item__box-7 {
-  background-image: url(/img/about/team/image\(5\).png);
+  background-image: url(../img/about/team/image\(5\).png);
 }
 
 .item__box-8 {
-  background-image: url(/img/about/team/image\(6\).png);
+  background-image: url(../img/about/team/image\(6\).png);
 }
 
 .item__socials {
