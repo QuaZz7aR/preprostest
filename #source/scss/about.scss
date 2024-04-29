@@ -53,7 +53,7 @@ body{
   }
 }
 .description__section{
-    background-image: url(img/about/Group\ 273.png);
+    background-image: url(../img/about/Group\ 273.png);
     background-position: 100% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ body{
 
 .information {
   &__section{
-    background-image: url(img/about/bg-image.png);
+    background-image: url(../img/about/bg-image.png);
     background-position: 100% -880%;
     background-repeat: no-repeat;
 }
