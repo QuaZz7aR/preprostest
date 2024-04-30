@@ -88,6 +88,46 @@ body{
 .back{
     position: relative;
     color: #FFFFFF;
+    .arrow {
+        &__left{
+          position: absolute;
+          top: 470px;
+          left: 32px;
+          width: 48px;
+          height: 48px;
+          background-color: rgba(255, 255, 255, .5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+          z-index: 1;
+        }
+        &__right{
+          position: absolute;
+          top: 470px;
+          right: 32px;
+          width: 48px;
+          height: 48px;
+          background-color: rgba(255, 255, 255, .5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+          z-index: 1;
+        }
+    }
     .construction{
         padding-top: 220px;
         width: 577px;
@@ -156,6 +196,7 @@ body{
         gap: 4px;
         @include fonts(700, 28px,42px);
     }
+    
 }
 .s1{
     margin-left: 0;
@@ -167,45 +208,6 @@ body{
     display: flex;
     input[name="r"]{
       display: none;
-    }
-    .arrows{
-      display: flex;
-      position: absolute;
-      gap: 1700px;
-      top: 470px;
-      left: 32px;
-    }
-    .arrow {
-      &__left{
-        width: 48px;
-        height: 48px;
-        background-color: rgba(255, 255, 255, .5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        &:hover{
-          cursor: pointer;
-          transform: scale(1.1);
-          transition: all 0.3s ease;
-          background-color: rgba(255, 255, 255, 0.9);
-        }
-      }
-      &__right{
-        width: 48px;
-        height: 48px;
-        background-color: rgba(255, 255, 255, .5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        &:hover{
-          cursor: pointer;
-          transform: scale(1.1);
-          transition: all 0.3s ease;
-          background-color: rgba(255, 255, 255, 0.9);
-        }
-      }
     }
   
     #r1:checked ~ .s1{
