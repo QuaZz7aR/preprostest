@@ -449,6 +449,7 @@
   border-radius: 4px;
 }
 .supported__block {
+  position: relative;
   width: 600px;
   padding-top: 60px;
 }
@@ -481,10 +482,78 @@
   line-height: 21px;
 }
 .supported__arrows {
+  z-index: 1;
+  position: absolute;
+  background-color: #F4F5F6;
+  top: 410px;
+  right: 0;
   height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
 }
 .supported__arrows img:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.clients__slider {
+  overflow: hidden;
+}
+.clients__slider__nav {
+  position: absolute;
+  width: 1230px;
+  top: 814px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.s1 {
+  margin-left: 0;
+}
+
+.clients__slides {
+  position: relative;
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clients__slides input[name=clients__r] {
+  display: none;
+}
+.clients__slides #clients__r1:checked ~ .s1 {
+  margin-left: 0;
+}
+.clients__slides #clients__r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+.clients__slides #clients__r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+.clients__slides #clients__r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+.clients__slides .clients__slide {
+  width: 25%;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.clients__slides .clients__slide img {
+  display: block;
 }
 
 .our__title {
